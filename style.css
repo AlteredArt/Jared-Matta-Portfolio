@@ -45,6 +45,7 @@ blockquote, q {
 	quotes: "" "";
 }
 
+/* end of myer reset */
 
 *{
   margin: 0;
@@ -58,42 +59,57 @@ body{
   /* overflow: hidden; */
 }
 
-.wrapper {
-  width: 100%;
-}
-/*
-.nav-list{
-  flex-direction: column;
-
-} */
 
 .nav-list {
-  background : none;
-  float:right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background : black;
+  /* float:right; */
   font-size: 1.125em;
-  margin-right: 1%;
-  text-align:right;
-  width:45;
-  list-style-type: none;
-  padding-bottom: 6px;
+  /* margin-right: 1%; */
+  /* text-align:right; */
+  /* width:45; */
+  /* list-style-type: none; */
+  padding-left: 10px;
+  padding right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
 
 .introimg{
   width: auto;
 }
 
-/* Container holding the image and the text */
-.container {
+.intro-container {
   position: relative;
 }
 
-/* Bottom right text */
-.text-block {
+.intro-title {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  text-align: center;
+  top: 40px;
+  left: 20px;
   background-color: black;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 30px;
+}
+
+
+.about-me-title {
+  /* position: absolute; */
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+.about-me-para {
+  /* position: absolute; */
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
 }
