@@ -11,6 +11,8 @@
   <title>Jared Mattas Portfolio</title>
 </head>
 <body>
+
+<!-- header -->
     <header>
       <div class="container">
         <div class="row">
@@ -19,7 +21,6 @@
         </div>
         <div class="nav-bar">
           <ul>
-
             <li><a href="" class="active">Home</a></li>
             <li><a href="">Projects</a></li>
             <li><a href="">Blogs</a></li>
@@ -31,7 +32,8 @@
       </div>
       </div>
     </header>
-
+<!-- header -->
+<!-- home -->
     <section class="home">
       <div class="container">
         <div class="row full-screen">
@@ -44,145 +46,137 @@
         </div>
       </div>
     </section>
-
-
+<!-- home -->
+<!-- about me -->
     <section class="about-me">
       <div class="container">
         <div class="row">
           <div class="section-title">
-              <h1>About Me</h1>
+            <h1>About Me</h1>
           </div>
         </div>
         <div class="row">
           <div class="about-content">
             <div class="row">
-            <div class="img">
-              <img src="images/project.png" alt="about-me">
-            </div>
+              <div class="img"><img src="images/headshot.JPG" alt="about-me"></div>
+              <!-- <div class="social-links">
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div> -->
             <div class="text">
-              <h4>I'm Jared Matta</h4>
-              <p>Full-stack developer, and an experienced graphic designer with a demonstrated history of working in the tech industry. Skilled in Full-Stack Development, Graphics Design, SQL, Art, Javascript, Rails, Ruby, Python, Django, React and Redux, and a wide variety of Adobe products. Strong art and design background with a professional focus in Computer Software Engineering from Flatiron School. </p>
+              <h4>Jared Matta</h4>
+              <p>Full-stack developer, skilled in Javascript, Rails, Ruby, Python, Django, React and Redux. Strong art and design background with a professional focus in Computer Software Engineering from Flatiron School. Located in El Paso, Tx, looking for a position in the tech industry. </p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    </section>
+<!-- about me -->
+<!-- portfolio -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h1>My Work</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="filter-buttons">
+              <ul id="filter-btns">
+                <li class="active" data-target="all">All</li>
+                <li data-target="project">Projects</li>
+                <li data-target="graphic">Graphic Design</li>
+                <li data-target="sketching">Sketching</li>
+              </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio-gallery">
+            <div class="item" data-id="project">
+              <div class="inner">
+              <img src="images/project.png" alt="portfolio" />
+              <div class="overlay">
+                <span class="fa fa-plus"></span>
+                <h4>Projects</h4>
+              </div>
+            </div>
+            </div>
+            <div class="item" data-id="graphic">
+                <div class="inner">
+              <img src="images/graphic.jpeg" alt="portfolio" />
+              <div class="overlay">
+                <span class="fa fa-plus"></span>
+                <h4>Graphic</h4>
+              </div>
+            </div>
+            </div>
+            <div class="item" data-id="sketching">
+                <div class="inner">
+              <img src="images/blogs.jpeg" alt="portfolio" />
+              <div class="overlay">
+                <span class="fa fa-plus"></span>
+                <h4>Sketching</h4>
+              </div>
+            </div>
+            </div>
+            <div class="portfolio-gallery">
+              <div class="item" data-id="project">
+                  <div class="inner">
+                <img src="images/project2.png" alt="portfolio" />
+                <div class="overlay">
+                  <span class="fa fa-plus"></span>
+                  <h4>Projects</h4>
+                </div>
+              </div>
+              </div>
+              <div class="item" data-id="graphic">
+                  <div class="inner">
+                <img src="images/dream.png" alt="portfolio" />
+                <div class="overlay">
+                  <span class="fa fa-plus"></span>
+                  <h4>Graphic</h4>
+                </div>
+              </div>
+              </div>
+              <div class="item" data-id="sketching">
+                  <div class="inner">
+                <img src="images/dream.png" alt="portfolio" />
+                <div class="overlay">
+                  <span class="fa fa-plus"></span>
+                  <h4>Sketching</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  <!-- <nav>
-      <div class="nav-name"><h4>Altered Art</h4></div>
-      <h1 class="nav-logo">Logo</h1>
-      <div class="nav-logo"><a href="#"><img src="images/wLogo.png"></a></div>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#philosophy">Philosophy</a></li>
-        <li><a href="#graphic">Graphics</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-        <div class="line4"></div>
-        <div class="line5"></div>
+<!-- portfolio -->
+<!-- lightbox -->
+    <div class="lightbox hide">
+      <span class="close-lightbox fa fa-close"></span>
+          <img src="images/dream.png" alt="portfolio" />
       </div>
-  </nav> -->
 
-  <!-- <section class="intro" id="intro">
-    <div class="intro-container">
-      <img src="images/intro2.jpg" alt="intro" style='width:100%;'>
-      <div class="intro-title">
-        <h1>Jared Matta</h1>
-        <p>Full Stack Developer | Graphic Designer</p>
-      </div>
     </div>
-  </section>
-
-
-
-  <section class="about-me" id="about-me">
-    <div class="about-me-container">
-        <p class='about-me-para'>
-          Welcome, Allow me to peak your curiosity, with my life?
-          I started with simple sketching and made my way up to Graphic Design,
-          where I worked mostly with vector imagery making logos and designing tattoos.
-          In high school, I dabbled in roboticists, which then turned into making my own high-performance fpv drones. I am a graduate of the immersive software
-          engineer program from, Flatiron School, and I'm currently looking for
-          a position in the Tech Industry.
-        </p>
-    </div>
-  </section> -->
-
-  <section class="projects" id="projects">
-    <div class="projects-container">
-      <h1 class="project-title">Check out my Projects!</h1>
-      <div class="job-jot-card">
-        <div class="job-jot-container">
-          <h4 class="job-jot-title"><b>Job Jot</b></h4>
-          <img src="images/project.png" class="job-jot-img" alt="job-jot-img">
-          <h6 class="job-jot-des">Keep track of your Job Leads!</h6>
-      </div>
-      </div>
-      <div class="bid-builder-card">
-        <div class="bid-builder-container">
-          <h4 class="bid-builder-title"><b>Bid Builder</b></h4>
-          <img class="bid-builder-img" src="images/graphic.jpeg" alt="Avatar">
-          <h6 class="bid-builder-des">Build Bids!</h6>
-      </div>
-      </div>
-      <div class="dream-journal-card">
-        <div class="dream-journal-container">
-          <h4 class="dream-journal-title"><b>Dream Journal</b></h4>
-          <img src="images/dream.png" alt="dream-journal">
-          <h6 class="dream-journal-des">Keep track of your dreams!</h6>
-      </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="philosophy" id="philosophy">
-    <div class="philosophy-container">
-      <h1 class="philosophy-title">Check out my blogs!</h1>
-      <img src="images/philosophy.jpeg" class="philosophy-img" alt="blog-img" width="100%">
-      <button type="button" class="blog-btn">Technical Blogs</button>
-      <!-- <button type="button" class="philosophy-btn">My Philosophy</button> -->
-    </div>
-  </section>
-
-
-  <section class="graphic" id="graphic">
-    <div class="graphic-container">
-      <h1 class="graphic-title">See my Graphic Designs!</h1>
-        <img class="graphic-img" src="images/graphic.jpeg" alt="philosophy">
-    </div>
-  </section>
-
-
-  <footer>
-    <nav>
-        <div class="contact-logo"><a href="#"><img src="images/contact.png"></a></div>
-
-        <div class="nav-name"><h4>Altered Art</h4></div>
-
-        <div class="nav-logo"><a href="#"><img src="images/wLogo.png"></a></div>
-        <ul class="nav-links">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#philosophy">Philosophy</a></li>
-          <li><a href="#graphic">Graphics</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-          <div class="line4"></div>
-          <div class="line5"></div>
+<!-- lightbox -->
+<!-- Resume -->
+    <section class="message-text">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="text">
+            <h2>Feel free to contact me or download my Resume/CV.</h2>
+          </div>
+          <div class="button">
+            <a href="">Resume</a>
+          </div>
         </div>
-    </nav>
-  </footer>
+
+      </div>
+
+    </section>
+<!-- Resume -->
 
   <script src="app.js" charset="utf-8"></script>
 
