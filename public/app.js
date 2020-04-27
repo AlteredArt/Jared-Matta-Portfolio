@@ -72,7 +72,37 @@ galleryItem.forEach(function(element){
 })
 
 // responsive
-const responsive=[
-  {breakpoint:{width:0, item:1}},
-  {breakpoint:{width:991, item:2}}
-]
+// const responsive=[
+//   {breakpoint:{width:0, item:1}},
+//   {breakpoint:{width:991, item:2}}
+// ]
+//
+
+
+
+window.onscroll=function(){
+  const docScrollTop=document.documentElement.scrollTop;
+
+  if(window.innerWidth>991){
+    if (docScrollTop>100){
+        document.querySelector("header").classList.add("fixed")
+    }
+    else{
+    document.querySelector("header").classList.remove("fixed")
+    }
+  }
+}
+
+
+// navbar links
+const navbar = document.querySelector(".navbar");
+  a=navbar.querySelectorAll("a");
+
+  a.forEach(function(element){
+    element.addEventListener("click",function(){
+        for(let i=0; i<a.length; i++){
+          a[i].classList.remove("active");
+        }
+      this.classList.add("active")
+    })
+  })

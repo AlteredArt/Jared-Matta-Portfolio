@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:300,400,500,600,700,900&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   font-family: 'PT Serif', serif;
 }
-
 * {
   box-sizing: border-box;
   margin:0;
 }
-
 .container{
   max-width: 1140px;
   margin: auto;
@@ -20,7 +20,6 @@ body{
    display: flex;
    flex-wrap: wrap;
 }
-
 .section-title{
   flex: 0 0 100%;
   max-width: 100%;
@@ -44,11 +43,9 @@ body{
   background-color: #febd01;
   bottom: 0px;
 }
-
 .text-center{
   text-align: center!important;
 }
-
 .text-right{
   text-align: right!important;
 }
@@ -59,7 +56,6 @@ body{
 
 /* header */
 header{
-  /* background-color: darkred; */
   position: absolute;
   left:0px;
   right: 0px;
@@ -67,13 +63,27 @@ header{
   padding: 0px 15px;
   z-index: 10;
 }
+header.fixed{
+  border-color: #eeeeee;
+  background-color: #ffffff;
+  position: fixed;
+  animation: fixHeader .5s ease;
+}
 
+@keyframes fixHeader{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(-%);
+  }
+}
 header .row{
   justify-content: space-between;
   align-items: center;
 }
 
-header .logo-container a{
+header .brand-name a{
   text-decoration: none;
   font-size: 22px;
   font-weight: 600;
@@ -81,29 +91,22 @@ header .logo-container a{
   text-transform: uppercase;
   position: relative;
 }
-
-header .logo-container a::before{
-  content: '';
-  height: 3px;
-  background-color: #ffffff;
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
+header.fixed .brand-name a{
+  color: #000000;
 }
 
-header .nav-bar ul{
+header .navbar ul{
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-header .nav-bar ul li{
+header .navbar ul li{
   display: inline-block;
   margin-left: 35px;
 }
 
-header .nav-bar ul li a{
+header .navbar ul li a{
   font-size: 15px;
   text-decoration: none;
   line-height: 72px;
@@ -112,8 +115,10 @@ header .nav-bar ul li a{
   font-weight: 600;
   position: relative;
 }
-
-header .nav-bar ul li a::before{
+header.fixed .navbar ul li a{
+  color: #000000;
+}
+header .navbar ul li a::before{
   content: '';
   height: 3px;
   background-color: #ffffff;
@@ -123,16 +128,29 @@ header .nav-bar ul li a::before{
   bottom: -1px;
   transition: all .5s ease;
 }
-
-header .nav-bar ul li a:hover::before{
+header.fixed .navbar ul li a::before{
+  background-color: #febd01;
+}
+header .navbar ul li a:hover::before{
+  width: 100%;
+  left: 0;
+}
+header .navbar ul li a.active::before{
   width: 100%;
   left: 0;
 }
 
-header .nav-bar ul li a.active::before{
+header .brand-name a::before{
+  content: '';
+  height: 3px;
+  background-color: #ffffff;
   width: 100%;
-  left: 0;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
+
+
 /* header */
 /* home */
 .home{
@@ -440,7 +458,6 @@ header .nav-bar ul li a.active::before{
 .message-text .button a:hover{
   background-color: #ffffff;
   color: #0000000;
-
 }
 
 .align-items-center{
@@ -525,7 +542,7 @@ header .nav-bar ul li a.active::before{
 .blogs .blogs-content .box a:hover{
   color: #0000000;
   border-color: #0000000;
-
+}
 
 /* contact */
 .contact{
@@ -573,4 +590,99 @@ header .nav-bar ul li a.active::before{
   flex: 0 0 cal(50% - 15px);
   max-width: calc(50% - 15px);
 }
+.contact .contact-form .col-12{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.contact .contact-form .form-control{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #eeeeee;
+  padding-bottom: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'PT Serif', serif;
+
+}
+.contact .contact-form textarea.form-control{
+  height: 140px;
+}
+.contact .contact-form .form-control::placeholder{
+  color: #838383;
+}
+.contact .contact-form .button {
+  /* background-color: #d5d5d5; */
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.contact .contact-form .button a{
+  border-radius: 4px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px; 25px;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .5s ease;
+  background-color: #febd01;
+  box-shadow: 0px 10px 15px #d5d5d5;
+  /* border: none; */
+  /* background-color: transparent; */
+}
+
+.contact .contact-form .button a:hover{
+  background-color: #ffffff;
+  color: #0000000;
+}
 /* contact */
+/* footer */
+footer{
+  padding: 70px 15px;
+  background-color: black;
+}
+
+footer .logo{
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+footer .social{
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+footer .social a{
+  color: aliceblue;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 12px;
+  transition: all .5s ease;
+}
+footer .social a:hover{
+  color: #ffffff;
+
+}
+
+.copyright p{
+  color: #838383;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+.copyright{
+  background-color: #0c0c17;
+  border-top: 1px solid #1d1d27;
+  padding: 15px;
+}
+
+/* footer */
