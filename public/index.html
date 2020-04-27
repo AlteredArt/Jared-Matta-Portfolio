@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Jared Mattas Portfolio</title>
+</head>
+<body>
+<!-- header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="brand-name">
+          <a href="" class="logo">Altered Art</a>
+        </div>
+        <div class="button">
+          <a href="https://drive.google.com/file/d/1KcAFqjrSdpNVvRwpq82v_hzqkDjEO7Fw/view?usp=sharing">Resume</a>
+        </div>
+        <div class="social">
+          <a href="https://www.instagram.com/aa_graphics/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jared-matta-33629a19a/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- header -->
+<!-- home -->
+  <section class="home" id="home">
+    <div class="container">
+      <div class="row full-screen">
+        <div class="home-content">
+          <div class="block">
+            <h1>Jared Matta</h1>
+            <h6>Full Stack Developer | Graphic Designer</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- home -->
+<!-- about me -->
+    <section class="about-me" id="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h1>About Me</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-content">
+            <div class="row">
+              <div class="img"><img src="images/headshot.JPG" alt="about-me"></div>
+              <!-- <div class="social-links">
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div> -->
+            <div class="text">
+              <h4>Jared Matta</h4>
+              <p>Full-stack developer, skilled in Javascript, Rails, Ruby, Python, Django, React and Redux. Strong art and design background with a professional focus in Computer Software Engineering from Flatiron School. Located in El Paso, Tx, looking for a position in the tech industry. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+<!-- about me -->
+<!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h1>My Work</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="filter-buttons">
+              <ul id="filter-btns">
+                <li class="active" data-target="all">All</li>
+                <li data-target="project">Projects</li>
+                <li data-target="graphic">Graphic Design</li>
+                <li data-target="sketching">Sketching</li>
+              </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio-gallery">
+            <div class="item" data-id="project">
+              <div class="inner">
+              <img src="images/dream.png" alt="portfolio" />
+              <div class="overlay">
+                <span class="fa fa-plus"></span>
+                <h4>Projects</h4>
+              </div>
+            </div>
+            </div>
+            <div class="item" data-id="graphic">
+                <div class="inner">
+              <img src="images/graphic1.PNG" alt="portfolio" />
+              <div class="overlay">
+                <span class="fa fa-plus"></span>
+                <h4>Graphic</h4>
+              </div>
+            </div>
+            </div>
+            <div class="item" data-id="sketching">
+                <div class="inner">
+              <img src="images/sketch2.JPG" alt="portfolio" />
+              <div class="overlay">
+                <span class="fa fa-plus"></span>
+                <h4>Sketching</h4>
+              </div>
+            </div>
+            </div>
+            <!-- <div class="portfolio-gallery"> -->
+              <div class="item" data-id="project">
+                  <div class="inner">
+                <img src="images/dream.png" alt="portfolio" />
+                <div class="overlay">
+                  <span class="fa fa-plus"></span>
+                  <h4>Projects</h4>
+                </div>
+              </div>
+              </div>
+              <div class="item" data-id="graphic">
+                  <div class="inner">
+                <img src="images/graphic2.PNG" alt="portfolio" />
+                <div class="overlay">
+                  <span class="fa fa-plus"></span>
+                  <h4>Graphic</h4>
+                </div>
+              </div>
+              </div>
+              <div class="item" data-id="sketching">
+                  <div class="inner">
+                <img src="images/sketch1.JPG" alt="portfolio" />
+                <div class="overlay">
+                  <span class="fa fa-plus"></span>
+                  <h4>Sketching</h4>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+<!-- portfolio -->
+<!-- lightbox -->
+    <div class="lightbox hide">
+      <span class="close-lightbox fa fa-close"></span>
+          <img src="images/dream.png" alt="portfolio" />
+      </div>
+
+    </div>
+<!-- lightbox -->
+
+<!-- blogs -->
+    <section class="blogs" id="blogs">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h1>Latest Blogs</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="blogs-content">
+            <div class="box">
+              <div class="img">
+                <img src="images/react.png" alt="blog">
+              </div>
+              <div class="info">
+                <span>14 April 2020</span> <span>Tech</span>
+              </div>
+              <h3>The React Store</h3>
+              <p>My blog on the React/Redux Store.</p>
+              <a href="https://medium.com/@cherokeedreemer/the-react-store-5fde66c7ace">Read More</a>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="images/growing.jpeg" alt="blog">
+              </div>
+              <div class="info">
+                <span>18 Feb 2020</span> <span>Life</span>
+              </div>
+              <h3>Growing Up</h3>
+              <p>My journey through tech.</p>
+              <a href="https://medium.com/@cherokeedreemer/growing-up-7816b9d384f6">Read More</a>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="images/binary.jpeg" alt="blog">
+              </div>
+              <div class="info">
+                <span>4 April 2020</span> <span>Tech</span>
+              </div>
+              <h3>Binary, What is it good for.</h3>
+              <p>Binary, and how it works</p>
+              <a href="https://medium.com/@cherokeedreemer/binary-what-is-it-good-for-318cd853b05">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- blogs -->
+
+<!-- contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h1>Contact Me</h1>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <div class="row">
+              <div class="text">
+                <h2>Drop me a line.</h2>
+              </div>
+            </div>
+            <div class="row space-between">
+              <div class="col-6">
+                <input type="text" class="form-control" name="" value="" placeholder="Name">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" name="" value="" placeholder="Email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <textarea name="name" rows="8" cols="80" class="form-control" placeholder="Your Message Here"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="button text-right">
+                <a href="#">Get in touch!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- contact -->
+<!-- Resume -->
+    <section class="message-text" id="resume">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="text">
+            <h2>Feel free to contact me or download my Resume/CV.</h2>
+          </div>
+          <div class="button">
+            <a href="https://drive.google.com/file/d/1KcAFqjrSdpNVvRwpq82v_hzqkDjEO7Fw/view?usp=sharing">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Resume -->
+<!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="logo">
+          Jared Matta
+        </div>
+        <div class="social">
+          <a href="https://www.instagram.com/aa_graphics/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jared-matta-33629a19a/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <p>&copy; 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- footer -->
+  <script src="app.js" charset="utf-8"></script>
+
+</body>
+</html>
