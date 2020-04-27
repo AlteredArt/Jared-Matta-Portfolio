@@ -70,3 +70,9 @@ galleryItem.forEach(function(element){
     lightboxImage.src=element.querySelector("img").getAttribute("src")
   })
 })
+
+// responsive
+const responsive=[
+  {breakpoint:{width:0, item:1}},
+  {breakpoint:{width:991, item:2}}
+]

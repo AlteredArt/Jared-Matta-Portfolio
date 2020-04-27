@@ -446,3 +446,131 @@ header .nav-bar ul li a.active::before{
 .align-items-center{
   align-items: center;
 }
+
+.blogs{
+  padding: 100px 15px;
+  background-color: #ffffff;
+}
+.blogs .section-title h1:before{
+  left:30%;
+}
+
+.blogs .blogs-content{
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blogs .blogs-content .box{
+  /* background-color: #d5d5d5; */
+  flex: 0 0 calc(33.33% - 25px);
+  max-width: calc(33.33% - 25px);
+}
+
+.blogs .blogs-content .box .img{
+  overflow: hidden;
+}
+.blogs .blogs-content .box .img img{
+    width: 100%;
+    display: block;
+    transition: all .5s ease;
+}
+.blogs .blogs-content .box:hover .img img{
+  transform: scale(1.1);
+}
+.blogs .blogs-content .box .info{
+  padding: 10px 0;
+}
+.blogs .blogs-content .box span{
+  font-size: 12px;
+  /* color: 838383; */
+  display: inline-block;
+}
+.blogs .blogs-content .box span:nth-child(2){
+  /* border-left:1px solid #dddddd; */
+  padding-left: 8px;
+  margin-left: 10px;
+}
+
+.blogs .blogs-content .box h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: #0000000;
+  margin: 0 0 10px;
+  padding: 0;
+
+
+}
+.blogs .blogs-content .box p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 0 0 10px;
+}
+.blogs .blogs-content .box a{
+  font-size: 14px;
+  color: #febd01;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #febd01;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  align-items: center;
+}
+
+.blogs .blogs-content .box a:hover{
+  color: #0000000;
+  border-color: #0000000;
+
+
+/* contact */
+.contact{
+  padding: 100px 0px;
+  background-color: #f5f8fd;
+}
+
+.contact .section-title h1:before{
+  left: 30%;
+}
+
+.contact .contact-form{
+  background-color: #ffffff;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 40px;
+  border: 1px solid #eeeeee;
+}
+.contact .contact-form .text{
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+.contact .contact-form .text h2{
+  font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+
+}
+.contact .contact-form .text p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 0px;
+}
+.contact .contact-form .space-between{
+  justify-content: space-between;
+
+}
+.contact .contact-form .col-6{
+  background-color: #d5d5d5;
+  flex: 0 0 cal(50% - 15px);
+  max-width: calc(50% - 15px);
+}
+/* contact */
