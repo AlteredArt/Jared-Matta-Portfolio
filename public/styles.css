@@ -53,6 +53,8 @@ body{
   text-align: left!important;
 }
 /* master */
+
+
 /* header */
 header{
   position: absolute;
@@ -123,7 +125,7 @@ header .navbar ul li a::before{
   transition: all .5s ease;
 }
 header.fixed .navbar ul li a::before{
-  background-color: #febd01;
+  background-color: #d4af37;
 }
 header .navbar ul li a:hover::before{
   width: 100%;
@@ -133,9 +135,6 @@ header .navbar ul li a.active::before{
   width: 100%;
   left: 0;
 }
-
-
-
 
 
 
@@ -163,7 +162,19 @@ header.fixed .brand-name a{
   color: #000000;
 }
 
-
+header.fixed .button a{
+  border-radius: 4px;
+  color: #eeeeee;
+  border: 1px solid #eeeeee;
+  padding: 12px; 25px;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .5s ease;
+  background-color: transparent;
+}
 /* header.fixed .navbar ul li a{
   color: #000000;
 }
