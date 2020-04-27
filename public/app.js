@@ -16,7 +16,7 @@
 //   });
 // }
 // navSlide();
-
+// notes
 const filterButtons=document.querySelector("#filter-btns").children;
 const items=document.querySelector(".portfolio-gallery").children;
 
@@ -70,7 +70,7 @@ galleryItem.forEach(function(element){
     lightboxImage.src=element.querySelector("img").getAttribute("src")
   })
 })
-// 
+//
 // responsive
 // const responsive=[
 //   {breakpoint:{width:0, item:1}},
