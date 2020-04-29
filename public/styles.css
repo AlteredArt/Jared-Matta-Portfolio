@@ -206,7 +206,7 @@ header.fixed .social a:hover{
 /* home */
 .home{
   min-height: 100vh;
-  background-image: url("images/2.jpg");
+  background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/2.jpg");
   background-size: cover;
   background-position: center;
   padding: 15px;
@@ -255,8 +255,8 @@ header.fixed .social a:hover{
 .about-me .about-content .img img{
   width: 100%;
   display: block;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+  /* -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); */
 }
 .about-me .about-content .text{
   flex: 0 0 66.66%;
@@ -555,8 +555,8 @@ header.fixed .social a:hover{
   justify-content: space-between;
 }
 .contact .contact-form .col-6{
-  flex: 0 0 cal(50% - 15px);
-  max-width: calc(50% - 15px);
+  flex: 0 0 calc(75% - 15px);
+  max-width: calc(75% - 15px);
 }
 .contact .contact-form .col-12{
   flex: 0 0 100%;
@@ -857,7 +857,7 @@ footer .social a:hover{
   }
   .home{
     min-height: 100vh;
-    background-image: url("images/headshot.JPG");
+    background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/headshot.JPG");
     background-size: cover;
     background-position: center;
     padding: 15px;
