@@ -1,3 +1,4 @@
+// filter buttons
 const filterButtons=document.querySelector("#filter-btns").children;
 const items=document.querySelector(".portfolio-gallery").children;
 
@@ -22,7 +23,8 @@ const items=document.querySelector(".portfolio-gallery").children;
       }
     })
   }
-
+// filter buttons
+// lightbox
 const closeLightbox=document.querySelector(".close-lightbox");
 const lightbox=document.querySelector(".lightbox");
 const lightboxImage=lightbox.querySelector("img");
@@ -49,16 +51,8 @@ galleryItem.forEach(function(element){
     lightboxImage.src=element.querySelector("img").getAttribute("src")
   })
 })
-//
-// responsive
-// const responsive=[
-//   {breakpoint:{width:0, item:1}},
-//   {breakpoint:{width:991, item:2}}
-// ]
-
-
-
-
+// lightbox
+// header scroll
 window.onscroll=function(){
   const docScrollTop=document.documentElement.scrollTop;
 
@@ -71,8 +65,7 @@ window.onscroll=function(){
     }
   }
 }
-
-
+// header scroll
 // navbar links
 const navbar = document.querySelector(".navbar");
   a=navbar.querySelectorAll("a");
@@ -86,11 +79,11 @@ const navbar = document.querySelector(".navbar");
       document.querySelector(".navbar").classList.toggle("show");
     })
   })
-
+// nav links
 // ham burger menubar
-
 const menu = document.querySelector(".ham-burger");
 
 menu.addEventListener("click",function(){
   document.querySelector(".navbar").classList.toggle("show");
 })
+// ham burger menu

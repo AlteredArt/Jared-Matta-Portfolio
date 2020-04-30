@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:300,400,500,600,700,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+@media(max-width: 768px){
+  html{
+    scroll-behavior: smooth;
+  }
+  .about-me .about-content .img{
+    /* flex: 0 0 33.33%;
+    max-width: 33.33%; */
+    display: none;
+  }
+
+
+  .home{
+    min-height: 100vh;
+    background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 15px;
+  }
+
+
+  .home .home-content .block h1{
+    font-size: 40px;
+    color: #ffffff;
+
+  }
+  .home .home-content .block h6{
+    font-size: 25px;
+    color: #ffffff;
+
+  }
+
+  header{
+    padding: 10px;
+    background-color: black;
+    position: fixed;
+    /* border: none; */
+  }
+
+  .ham-burger img{
+    display: inline-block;
+  }
+  .navbar{
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    left: 0px;
+    top: 85px;
+    /* padding: 15px; */
+    border-top: 1px solid #d4af37;
+  }
+  .navbar.show{
+    display: block;
+
+  }
+  header .navbar ul li{
+    display: block;
+    margin-left: 0;
+    color: #d4af37;
+  }
+  header .navbar ul li a{
+    line-height: 42px;
+    color: #d4af37;
+  }
+  header .navbar ul li a::before{
+    background-color: black;
+  }
+
+
+
+  .about-me .about-content .text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  .about-me .about-content img{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .portfolio .portfolio-gallery .item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    padding: 8px;
+  }
+  .message-text .text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+    padding-top: 20px;
+  }
+  .message-text .button {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .blogs .blogs-content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .contact .contact-form{
+    padding: 40px 20px;
+  }
+  .contact .contatc-form .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+  }
+
+}

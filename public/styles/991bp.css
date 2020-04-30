@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:300,400,500,600,700,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@media(max-width: 991px){
+  html{
+    scroll-behavior: smooth;
+  }
+/* home */
+  .home .home-content .block h1{
+    font-size: 55px;
+    border-bottom: 1px solid #d4af37;
+  }
+  .home .home-content .block h6{
+    font-size: 25px;
+  }
+  .home .home-content .block{
+    /* flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 35px; */
+    margin-top: 820px;
+  }
+
+  .home{
+    min-height: 100vh;
+    background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+  }
+
+  header{
+    position: fixed;
+}
+
+}

@@ -20,9 +20,12 @@ body{
    display: flex;
    flex-wrap: wrap;
 }
+/* master */
+/* section title  */
 .section-title{
   flex: 0 0 100%;
   max-width: 100%;
+  padding-top: 20px
   margin-bottom: 40px;
 }
 .section-title h1{
@@ -52,9 +55,7 @@ body{
 .text-left{
   text-align: left!important;
 }
-/* master */
-
-
+/* section title */
 /* header */
 header{
   position: absolute;
@@ -158,24 +159,7 @@ header.fixed .brand-name a{
 header.fixed .brand-name a{
   color: #ffffff;
 }
-/* header.fixed .button a{
-  border-radius: 4px;
-  color: #eeeeee;
-  border: 1px solid #eeeeee;
-  padding: 12px; 25px;
-  text-decoration: none;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: all .5s ease;
-  background-color: transparent;
-} */
-/* header.fixed .navbar ul li a{
-  color: #000000;
-}
-header.fixed .navbar ul li a::before{
-  background-color: #febd01;
-}
+
 
 
 /* header social */
@@ -189,7 +173,6 @@ header .social a{
 header .social a:hover{
   color: #ffffff;
 }
-/* header fixed with movement */
 header.fixed .social a{
   color: #ffffff;
   text-decoration: none;
@@ -206,7 +189,7 @@ header.fixed .social a:hover{
 /* home */
 .home{
   min-height: 100vh;
-  background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/2.jpg");
+  background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg");
   background-size: cover;
   background-position: center;
   padding: 15px;
@@ -227,7 +210,7 @@ header.fixed .social a:hover{
   margin-top: 520px;
 }
 .home .home-content .block h1{
-  color: #eeeeee;
+  color: black;
   font-size: 70px;
   font-weight: 600;
   margin: 0;
@@ -235,18 +218,33 @@ header.fixed .social a:hover{
   border-bottom: 1px solid #d4af37;
 }
 .home .home-content .block h6{
-  color: #eeeeee;
-  font-size: 18px;
+  color: black;
+  font-size: 35px;
   font-weight: 500;
   margin: 0;
   padding: 0;
 }
+/* ham burger menu */
+.ham-burger img{
+  display: inline-block;
+  font-weight: 400;
+  color: #d4af37;
+  border-radius: 3px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+/* hamburger menu */
 /* home */
 
 /* about me */
 .about-me{
-  padding: 40px 15px;
+  padding: 20px 15px;
   background-color: black;
+}
+.about-me .section-title h1:before {
+  left: 30%;
 }
 .about-me .about-content .img{
   flex: 0 0 33.33%;
@@ -521,6 +519,52 @@ header.fixed .social a:hover{
 }
 /* blogs */
 
+/* resume */
+.message-text{
+  background-color: black;
+  padding: 20px 15px;
+}
+.message-text .text{
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+}
+.message-text .text h2{
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+.message-text .button{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: right;
+}
+.message-text .button a{
+  border-radius: 4px;
+  color: #ffffff;
+  border: 1px solid #d4af37;
+  padding: 12px; 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .5s ease;
+  background-color: transparent;
+}
+.message-text .button a:hover{
+  background-color: #0000000;
+  color: #ffffff;
+}
+
+.align-items-center{
+  align-items: center;
+}
+/* resume */
+
 /* contact */
 .contact{
   padding: 30px 20px;
@@ -594,7 +638,6 @@ header.fixed .social a:hover{
   font-weight: 600;
   transition: all .5s ease;
   background-color: transparent;
-
 }
 .contact .contact-form .button a:hover{
   background-color: black;
@@ -602,62 +645,16 @@ header.fixed .social a:hover{
   box-shadow: 0px 2px 10px #eeeeee;
 }
 /* contact */
-/* message */
-.message-text{
-  background-color: black;
-  padding: 20px 15px;
-}
-.message-text .text{
-  flex: 0 0 66.66%;
-  max-width: 66.66%;
-}
-.message-text .text h2{
-  font-size: 15px;
-  color: #ffffff;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  line-height: 30px;
-}
 
-.message-text .button{
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-  text-align: right;
-}
-.message-text .button a{
-  border-radius: 4px;
-  color: #ffffff;
-  border: 1px solid #d4af37;
-  padding: 12px; 25px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: all .5s ease;
-  background-color: transparent;
-}
-.message-text .button a:hover{
-  background-color: #0000000;
-  color: #ffffff;
-}
-
-.align-items-center{
-  align-items: center;
-}
-/* message */
 /* footer */
 footer{
   padding: 20px 15px;
   background-color: black;
 }
-
 footer .row{
   justify-content: space-between;
   align-items: center;
 }
-
 footer .logo{
   flex: 0 0 100%;
   max-width: 100%;
@@ -666,9 +663,7 @@ footer .logo{
   font-weight: 900;
   color: #ffffff;
   border-bottom: 2px solid #febd01;
-
 }
-
 footer .social{
   flex: 0 0 100%;
   max-width: 100%;
@@ -697,184 +692,6 @@ footer .social a:hover{
 }
 .copyright{
   background-color: #0c0c17;
-  /* border-top: 0.5px solid #ffffff; */
   padding: 15px;
 }
 /* copyright */
-
-/* ham burger menu */
-.ham-burger img{
-  /* font-size: 20px; */
-  display: inline-block;
-  font-weight: 400;
-  /* height: 90px; */
-  /* width: 95px; */
-  /* background-color: black; */
-  color: #d4af37;
-  border-radius: 3px;
-  line-height: 20px;
-  text-align: center;
-  cursor: pointer;
-  display: none;
-  /* border: 1px solid #eeeeee; */
-}
-
-
-/* hamburger menu */
-/* media queries */
-@media(max-width: 991px){
-  .home .home-content .block h1{
-    font-size: 50px;
-    border-bottom: 1px solid #d4af37;
-  }
-}
-
-@media(max-width: 767px){
-  .home .home-content .block h1{
-    font-size: 40px;
-  }
-  .home .home-content .block h6{
-    font-size: 25px;
-  }
-  header{
-    padding: 10px;
-    background-color: black;
-    position: fixed;
-    /* border: none; */
-  }
-  header .brand-name a{
-    color: #ffffff;
-  }
-  /* header .social a{
-    color: #ffffff;
-  } */
-  .ham-burger img{
-    display: inline-block;
-    /* color: #d4af37; */
-  }
-
-  /* fix this here? */
-  .navbar{
-    display: none;
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    left: 0px;
-    top: 90px;
-    padding: 15px;
-    border-top: 1px solid #d4af37;
-  }
-  .navbar.show{
-    display: block;
-
-  }
-  header .navbar ul li{
-    display: block;
-    margin-left: 0;
-    color: #d4af37;
-  }
-  header .navbar ul li a{
-    line-height: 42px;
-    color: #d4af37;
-  }
-  header .navbar ul li a::before{
-    background-color: black;
-  }
-  .about-me .about-content .text{
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding-left: 0px;
-    padding-top: 30px;
-  }
-  .about-me .about-content img{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .portfolio .portfolio-gallery .item{
-    flex: 0 0 50%;
-    max-width: 50%;
-    position: relative;
-    padding: 8px;
-  }
-  .message-text .text {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: left;
-    padding-top: 20px;
-  }
-  .message-text .button {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .blogs .blogs-content .box {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
-  .contact .contact-form{
-    padding: 40px 20px;
-  }
-  .contact .contatc-form .col-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-
-  }
-
-}
-
-
-@media(max-width: 500px){
-  .home .home-content .block h1{
-    font-size: 40px;
-
-  }
-  .home .home-content .block h6{
-    font-size: 30px;
-  }
-  .home .home-content .block{
-    padding-left: 20px;
-  }
-  .portfolio .portfolio-gallery .item{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .about-me .about-content .text .info .list p {
-    flex: 0 0 100%;
-  }
-  .about-me .about-content .img{
-    /* flex: 0 0 33.33%;
-    max-width: 33.33%; */
-  display: none;
-  }
-  .about-me .about-content .text h4{
-    /* font-size: 15px; */
-    /* font-weight: 600; */
-  align-content: center;
-    color: #ffffff;
-  }
-  header .social a{
-    display: none;
-  }
-  .home{
-    min-height: 100vh;
-    background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/headshot.JPG");
-    background-size: cover;
-    background-position: center;
-    padding: 15px;
-  }
-  .about-me{
-    padding: 20px 15px;
-    }
-  .section-title{
-    /* flex: 0 0 100%; */
-      /* max-width: 100%; */
-      margin-bottom: 10px;
-    }
-    .about-me .about-content .text h4{
-      margin: 0px 5px 5px 5px;
-    }
-    .blogs{
-      padding: 20px 15px;
-    }
-
-}

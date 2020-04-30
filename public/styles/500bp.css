@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:300,400,500,600,700,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+@media(max-width: 500px){
+  html{
+    scroll-behavior: smooth;
+  }
+/* master */
+.section-title{
+    /* flex: 0 0 100%; */
+    /* max-width: 100%; */
+    margin-bottom: 20px;
+  }
+/* master */
+/* home */
+.home .home-content .block h1{
+  font-size: 40px;
+
+}
+.home .home-content .block h6{
+  font-size: 30px;
+
+}
+.home .home-content .block{
+  padding-left: 20px;
+}
+
+
+
+.home{
+  min-height: 100vh;
+  background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG");
+  background-size: cover;
+  background-position: center;
+  /* padding: -85%; */
+}
+/* home */
+
+
+
+
+/* portfolio */
+.portfolio .portfolio-gallery .item{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+/* about me */
+.about-me .about-content .text .info .list p {
+  flex: 0 0 100%;
+}
+.about-me .about-content .img{
+  /* flex: 0 0 33.33%;
+  max-width: 33.33%; */
+  display: none;
+}
+.about-me .about-content .text h4{
+  /* font-size: 15px; */
+  /* font-weight: 600; */
+  align-content: center;
+  color: #ffffff;
+}
+.about-me{
+  padding: 20px 15px;
+}
+.about-me .about-content .text h4{
+  margin: 0px 5px 5px 5px;
+}
+/* about me */
+/* blogs */
+.blogs{
+  padding: 20px 15px;
+}
+/* blogs */
+}
