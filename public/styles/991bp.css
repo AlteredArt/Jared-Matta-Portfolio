@@ -14,20 +14,23 @@
     font-size: 25px;
   }
   .home .home-content .block{
-    /* flex: 0 0 75%;
-    max-width: 75%;
-    padding-left: 35px; */
     margin-top: 820px;
   }
 
+
+/* the problem is here with the img */
   .home{
     min-height: 100vh;
     background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg");
     background-size: cover;
-    background-position: center;
-    padding-top: 25px;
+    background-position: right;
+    /* padding-top: 25px; */
+    max-width: 100%
   }
-
+  .home img{
+    object-fit: fill;
+  }
+/* the problem ends here */
   header{
     position: fixed;
 }

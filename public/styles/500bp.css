@@ -3,38 +3,48 @@
 
 
 @media(max-width: 500px){
+/* master */
   html{
     scroll-behavior: smooth;
   }
-/* master */
 .section-title{
-    /* flex: 0 0 100%; */
-    /* max-width: 100%; */
     margin-bottom: 20px;
   }
 /* master */
 /* home */
 .home .home-content .block h1{
   font-size: 40px;
-
 }
 .home .home-content .block h6{
   font-size: 30px;
-
 }
 .home .home-content .block{
   padding-left: 20px;
 }
 
-
-
+/* the problem is here */
 .home{
   min-height: 100vh;
   background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG");
   background-size: cover;
   background-position: center;
-  /* padding: -85%; */
+
 }
+
+.blogs{
+  padding: 100px 20px;
+
+}
+.contact{
+  padding: 80px 20px;
+
+}
+.portfolio{
+  padding: 80px 20px;
+}
+/* .home img{} */
+/* .home img{} */
+/* the problem ends here */
 /* home */
 
 
@@ -50,13 +60,9 @@
   flex: 0 0 100%;
 }
 .about-me .about-content .img{
-  /* flex: 0 0 33.33%;
-  max-width: 33.33%; */
   display: none;
 }
 .about-me .about-content .text h4{
-  /* font-size: 15px; */
-  /* font-weight: 600; */
   align-content: center;
   color: #ffffff;
 }

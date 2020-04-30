@@ -3,16 +3,14 @@
 
 
 @media(max-width: 768px){
+  /* master */
   html{
     scroll-behavior: smooth;
   }
-  .about-me .about-content .img{
-    /* flex: 0 0 33.33%;
-    max-width: 33.33%; */
-    display: none;
-  }
+  /* master */
 
-
+/* home */
+/* the problem is here */
   .home{
     min-height: 100vh;
     background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG");
@@ -20,26 +18,22 @@
     background-position: center;
     padding: 20px 15px;
   }
-
-
+  /* .home img{} */
+/* the problem ends here */
   .home .home-content .block h1{
     font-size: 40px;
     color: #ffffff;
-
   }
   .home .home-content .block h6{
     font-size: 25px;
     color: #ffffff;
-
   }
-
+/* header */
   header{
     padding: 10px;
     background-color: black;
     position: fixed;
-    /* border: none; */
   }
-
   .ham-burger img{
     display: inline-block;
   }
@@ -49,29 +43,37 @@
     background-color: black;
     width: 100%;
     left: 0px;
-    top: 85px;
-    /* padding: 15px; */
-    border-top: 1px solid #d4af37;
+    top: 80px;
+    border-top: 3px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
+    padding-left: 10px;
+    height: 450px;
+
+
   }
   .navbar.show{
     display: block;
-
   }
   header .navbar ul li{
     display: block;
-    margin-left: 0;
+    margin-left: 10;
     color: #d4af37;
   }
   header .navbar ul li a{
-    line-height: 42px;
+    line-height: 92px;
     color: #d4af37;
+      font-size: 50px;
   }
   header .navbar ul li a::before{
     background-color: black;
   }
-
-
-
+/* header */
+/* about me */
+/* about me */
+.about-me .about-content .img{
+  display: none;
+}
+/* master */
   .about-me .about-content .text{
     flex: 0 0 100%;
     max-width: 100%;
@@ -82,12 +84,15 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  /* about me */
+  /* portfolio */
   .portfolio .portfolio-gallery .item{
     flex: 0 0 50%;
     max-width: 50%;
     position: relative;
     padding: 8px;
   }
+  /* resume */
   .message-text .text {
     flex: 0 0 100%;
     max-width: 100%;
@@ -98,18 +103,21 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  /* resume */
+  /* blogs */
   .blogs .blogs-content .box {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
   }
+  /* blogs */
+  /* contact */
   .contact .contact-form{
     padding: 40px 20px;
   }
   .contact .contatc-form .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
-
   }
-
+/* contact */
 }

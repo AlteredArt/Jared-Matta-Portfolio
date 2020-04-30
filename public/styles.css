@@ -4,22 +4,7 @@
 html{
   scroll-behavior: smooth;
 }
-body{
-  margin: 0;
-  font-family: 'PT Serif', serif;
-}
-* {
-  box-sizing: border-box;
-  margin:0;
-}
-.container{
-  max-width: 1140px;
-  margin: auto;
-}
-.row{
-   display: flex;
-   flex-wrap: wrap;
-}
+
 /* master */
 /* section title  */
 .section-title{
@@ -185,14 +170,34 @@ header.fixed .social a:hover{
 }
 /* header social */
 /* header */
+body{
+  margin: 0;
+  font-family: 'PT Serif', serif;
+}
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+.container{
+  /* max-width: 1140px; */
+  max-width: 1400px;
 
+  margin: auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
 /* home */
 .home{
   min-height: 100vh;
   background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg");
   background-size: cover;
-  background-position: center;
-  padding: 15px;
+  /* object-fit:  */
+  background-position: right;
+  /* padding: 15px; */
+  max-width: 100%;
+
 }
 .home .full-screen{
   min-height: 100vh;
@@ -207,7 +212,7 @@ header.fixed .social a:hover{
   flex: 0 0 75%;
   max-width: 75%;
   padding-left: 35px;
-  margin-top: 520px;
+  margin-top: 700px;
 }
 .home .home-content .block h1{
   color: black;
@@ -240,7 +245,7 @@ header.fixed .social a:hover{
 
 /* about me */
 .about-me{
-  padding: 20px 15px;
+  padding: 60px 15px;
   background-color: black;
 }
 .about-me .section-title h1:before {
@@ -279,7 +284,7 @@ header.fixed .social a:hover{
 /* portfolio */
 .portfolio {
   background-color: black;
-  padding: 25px 7px;
+  padding: 80px 7px;
 }
 
 /* .portfolio .section-title{
@@ -444,7 +449,7 @@ header.fixed .social a:hover{
 
 /* blogs */
 .blogs{
-  padding: 50px 15px;
+  padding: 80px 15px;
   background-color: black;
 }
 
@@ -567,7 +572,7 @@ header.fixed .social a:hover{
 
 /* contact */
 .contact{
-  padding: 30px 20px;
+  padding: 50px 20px;
   background-color: black;
 }
 
