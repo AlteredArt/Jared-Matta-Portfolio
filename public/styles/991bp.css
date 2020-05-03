@@ -7,8 +7,8 @@
   }
 /* home */
   .home .home-content .block h1{
-    font-size: 55px;
-    border-bottom: 1px solid #d4af37;
+    font-size: 60px;
+    border-bottom: 4px solid #d4af37;
   }
   .home .home-content .block h6{
     font-size: 25px;
@@ -17,8 +17,9 @@
     margin-top: 820px;
   }
 
-
-/* the problem is here with the img */
+  header .navbar ul li a {
+      font-size: 15px;
+    }
   .home{
     min-height: 100vh;
     background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg");

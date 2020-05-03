@@ -8,9 +8,7 @@
     scroll-behavior: smooth;
   }
   /* master */
-
 /* home */
-/* the problem is here */
   .home{
     min-height: 100vh;
     background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG");
@@ -18,21 +16,19 @@
     background-position: center;
     padding: 20px 15px;
   }
-  /* .home img{} */
-/* the problem ends here */
   .home .home-content .block h1{
-    font-size: 40px;
+    font-size: 50px;
     color: #ffffff;
   }
   .home .home-content .block h6{
-    font-size: 25px;
+    font-size: 28px;
     color: #ffffff;
   }
 /* header */
   header{
-    padding: 10px;
-    background-color: black;
+    padding: 10px 40px;
     position: fixed;
+    /* opacity: 0.75; */
   }
   .ham-burger img{
     display: inline-block;
@@ -48,7 +44,6 @@
     border-bottom: 2px solid #d4af37;
     padding-left: 10px;
     height: 450px;
-
 
   }
   .navbar.show{
@@ -92,12 +87,16 @@
     position: relative;
     padding: 8px;
   }
+  .portfolio .filter-buttons ul li {
+  font-size: 20px;
+  }
   /* resume */
   .message-text .text {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: left;
     padding-top: 20px;
+    font-size: 20px;
   }
   .message-text .button {
     flex: 0 0 100%;
@@ -110,14 +109,17 @@
     max-width: 100%;
     margin-bottom: 40px;
   }
+  .blogs .blogs-content .box a {
+    font-size: 18px;
+  }
   /* blogs */
   /* contact */
-  .contact .contact-form{
+  /* .contact .contact-form{
     padding: 40px 20px;
   }
   .contact .contatc-form .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
-  }
+  } */
 /* contact */
 }

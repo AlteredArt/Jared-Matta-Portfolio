@@ -35,25 +35,19 @@
   padding: 100px 20px;
 
 }
-.contact{
+/* .contact{
   padding: 80px 20px;
 
-}
-.portfolio{
-  padding: 80px 20px;
-}
-/* .home img{} */
-/* .home img{} */
-/* the problem ends here */
-/* home */
-
-
-
+} */
+/* contact */
 
 /* portfolio */
 .portfolio .portfolio-gallery .item{
   flex: 0 0 100%;
   max-width: 100%;
+}
+.portfolio{
+  padding: 80px 20px;
 }
 /* about me */
 .about-me .about-content .text .info .list p {

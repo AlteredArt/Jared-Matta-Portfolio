@@ -87,10 +87,3 @@ menu.addEventListener("click",function(){
   document.querySelector(".navbar").classList.toggle("show");
 })
 // ham burger menu
-
-
-// handleSubmit
-
-handleSubmit = (event) => {
-  event.preventDefault();
-}
