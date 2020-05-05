@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
   }
   /* master */
-/* home */
+  /* home */
   .home{
     min-height: 100vh;
     background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG");
@@ -24,7 +24,7 @@
     font-size: 28px;
     color: #ffffff;
   }
-/* header */
+  /* header */
   header{
     padding: 10px 40px;
     position: fixed;
@@ -39,12 +39,11 @@
     background-color: black;
     width: 100%;
     left: 0px;
-    top: 80px;
+    top: 62px;
     border-top: 3px solid #d4af37;
     border-bottom: 2px solid #d4af37;
     padding-left: 10px;
     height: 450px;
-
   }
   .navbar.show{
     display: block;
@@ -62,73 +61,87 @@
   header .navbar ul li a::before{
     background-color: black;
   }
-/* header */
-/* about me */
-/* about me */
-.about-me .about-content .img{
-  display: none;
-}
-}
-.about-me {
-    padding: 0px 40px;
-}
-/* master */
-  .about-me .about-content .text{
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding-left: 0px;
-    padding-top: 0px;
-  }
-
+  /* header */
   /* about me */
-  /* portfolio */
-  .portfolio{
-    padding: 65px 27px;
+  .about-me .about-content .img{
+    display: none;
   }
-  .portfolio .portfolio-gallery .item{
-    flex: 0 0 50%;
-    max-width: 50%;
-    position: relative;
-    padding: 8px;
+  .about-me {
+      padding: 0px 40px;
   }
-  .portfolio .filter-buttons ul li {
-  font-size: 20px;
-  }
-  /* resume */
-  .message-text .text {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    padding-top: 20px;
-    /* font-size: 20px; */
-  }
-  .message-text .text h2 {
-  font-size: 27px;
-}
-  .message-text .button {
-    flex: 3 0 51%;
-    max-width: 100%;
-    /* align-items: center; */
-  }
-  /* resume */
-  /* blogs */
-  .blogs .blogs-content .box {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
-  .blogs .blogs-content .box a {
-    font-size: 18px;
-  }
+  /* master */
+    .about-me .about-content .text{
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-left: 0px;
+      padding-top: 0px;
+    }
+
+    /* about me */
+    /* portfolio */
+    /* .portfolio{
+      padding: 65px 27px;
+    } */
+    /* .portfolio .portfolio-gallery .item{
+      flex: 0 0 50%;
+      max-width: 50%;
+      position: relative;
+      padding: 8px;
+    } */
+    /* .portfolio .portfolio-gallery .ivideo{
+      flex:0 0 33.33%;
+      max-width:33.33%;
+      position: relative;
+      padding: 8px;
+    }
+    .portfolio .portfolio-gallery .ivideo .inner{
+      position: relative;
+    }
+    .portfolio .portfolio-gallery .ivideo iframe{
+      width: 100%;
+      height: 220px;
+      display: block;
+    } */
+
+    /* .portfolio .filter-buttons ul li {
+    font-size: 20px;
+    } */
+    /* .portfolio .filter-buttons ul li {
+        font-size: 19px;
+    } */
+    /* resume */
+    .message-text .text {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding-top: 20px;
+      /* font-size: 20px; */
+    }
+    .message-text .text h2 {
+    font-size: 27px;
+    }
+    .message-text .button {
+      flex: 3 0 51%;
+      max-width: 100%;
+      /* align-items: center; */
+    }
+    /* resume */
     /* blogs */
-  .section-title{
-    margin-bottom: 15px;
-  }
-  .blogs{
-    padding: 65px 39px;
-  }
-  .portfolio .filter-buttons ul li {
-      font-size: 19px;
-  }
+    .blogs .blogs-content .box {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+    .blogs .blogs-content .box a {
+      font-size: 18px;
+    }
+      /* blogs */
+    .section-title{
+      margin-bottom: 15px;
+    }
+    .blogs{
+      padding: 65px 39px;
+    }
+
 
 }

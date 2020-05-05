@@ -13,8 +13,8 @@ body{
   margin:0;
 }
 .container{
-  /* max-width: 1140px; */
-  max-width: 1400px;
+  max-width: 1140px;
+  /* max-width: 1400px; */
   margin: auto;
 }
 .row{
@@ -210,7 +210,7 @@ header.fixed .social a:hover{
 .home .home-content .block h6{
   color: black;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 750;
   margin: 0;
   padding: 0;
 }
@@ -263,19 +263,11 @@ header.fixed .social a:hover{
   margin: 0px 5px 5px 5px;
 }
 /* aboutme */
-
-
-
 /* portfolio */
 .portfolio {
   background-color: black;
-  padding: 60px 7px;
+  padding: 100px 15px;
 }
-/* .portfolio .section-title{
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 40px;
-} */
 .portfolio .section-title h1:before {
   left: 30%;
 }
@@ -305,31 +297,18 @@ header.fixed .social a:hover{
 .portfolio .filter-buttons{
   margin-bottom: 25px;
 }
+
 .portfolio .portfolio-gallery{
   flex: 0 0 100%;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.portfolio .portfolio-gallery .ivideo{
-  flex:0 0 33.33%;
-  max-width:33.33%;
-  position: relative;
-  padding: 8px;
-}
-.portfolio .portfolio-gallery .ivideo .inner{
-  position: relative;
-}
-.portfolio .portfolio-gallery .ivideo iframe{
-  width: 100%;
-  height: 220px;
-  display: block;
-}
-
-
 .portfolio .portfolio-gallery .item{
+  /* background-color: black; */
   flex:0 0 33.33%;
   max-width:33.33%;
+  margin-bottom: 16px;
   position: relative;
   padding: 8px;
 }
@@ -340,7 +319,6 @@ header.fixed .social a:hover{
   width: 100%;
   display: block;
 }
-
 .portfolio .portfolio-gallery .item .overlay{
   position: absolute;
   left: 0;
@@ -402,9 +380,6 @@ header.fixed .social a:hover{
   }
 }
 /* portfolio */
-
-
-
 /* lightbox */
 .lightbox{
   position: fixed;
@@ -413,7 +388,7 @@ header.fixed .social a:hover{
   right: 0;
   bottom: 0;
   z-index: 100;
-  background-color: darkblue;
+  background-color: blue;
   /* display: flex; */
   justify-content: center;
   align-items: center;
@@ -615,86 +590,3 @@ footer .social a:hover{
   padding: 15px;
 }
 /* copyright */
-
-
-
-/* contact */
-/* .contact{
-  padding: 50px 20px;
-  background-color: black;
-}
-
-.contact .section-title h1:before{
-  left: 30%;
-}
-
-.contact .contact-form{
-  background-color: black;
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding: 40px;
-  border: 2px solid #d4af37;
-}
-.contact .contact-form .text{
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding-bottom: 20px;
-}
-.contact .contact-form .text h2{
-  font-size: 25px;
-  font-weight: 600;
-  color: #ffffff;
-  border-bottom: 2px solid #d4af37;
-  margin: 0;
-  padding: 0;
-}
-.contact .contact-form .space-between{
-  justify-content: space-between;
-}
-.contact .contact-form .col-6{
-  flex: 0 0 calc(75% - 15px);
-  max-width: calc(75% - 15px);
-}
-.contact .contact-form .col-12{
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-.contact .contact-form .form-control{
-  height: 25px;
-  width: 100%;
-  margin-bottom: 15px;
-  border: 1px solid #ffffff;
-  padding-bottom: 6px 12px;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: 'PT Serif', serif;
-}
-.contact .contact-form textarea.form-control{
-  height: 140px;
-}
-.contact .contact-form .form-control::placeholder{
-  color: #838383;
-}
-.contact .contact-form .button {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-.contact .contact-form .button a{
-  border-radius: 4px;
-  color: #ffffff;
-  border: 1px solid #d4af37;
-  padding: 12px; 25px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: all .5s ease;
-  background-color: transparent;
-}
-.contact .contact-form .button a:hover{
-  background-color: black;
-  color: #0000000;
-  box-shadow: 0px 2px 10px #eeeeee;
-} */
-/* contact */

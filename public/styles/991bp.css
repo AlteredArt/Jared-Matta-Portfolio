@@ -19,6 +19,15 @@
   header .navbar ul li a {
       font-size: 15px;
     }
+  header{
+    position: fixed;
+  }
+  .blogs {
+    padding: 75px 15px;
+  }
+
+
+  
   .home{
     min-height: 100vh;
     background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg");
@@ -27,10 +36,4 @@
     /* padding-top: 25px; */
     max-width: 100%
   }
-  header{
-    position: fixed;
-}
-.blogs {
-  padding: 75px 15px;
-}
 }
