@@ -11,7 +11,7 @@
     border-bottom: 4px solid #d4af37;
   }
   .home .home-content .block h6{
-    font-size: 25px;
+    font-size: 19px;
   }
   .home .home-content .block{
     margin-top: 820px;
@@ -26,8 +26,17 @@
     padding: 75px 15px;
   }
 
+  .message-text {
 
-  
+    padding: 45px 15px;
+
+}
+.message-text .button a {
+
+    padding: 7px;
+
+}
+
   .home{
     min-height: 100vh;
     background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg");

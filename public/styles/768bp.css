@@ -11,10 +11,11 @@
   /* home */
   .home{
     min-height: 100vh;
-    background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG");
+    /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG"); */
     background-size: cover;
     background-position: center;
-    padding: 20px 15px;
+    /* padding: 20px 15px; */
+    max-width: 100%;
   }
   .home .home-content .block h1{
     font-size: 50px;
@@ -28,6 +29,7 @@
   header{
     padding: 10px 40px;
     position: fixed;
+    background-color: blacl;
     /* opacity: 0.75; */
   }
   .ham-burger img{
@@ -35,7 +37,7 @@
   }
   .navbar{
     display: none;
-    position: absolute;
+    /* position: absolute;
     background-color: black;
     width: 100%;
     left: 0px;
@@ -43,7 +45,7 @@
     border-top: 3px solid #d4af37;
     border-bottom: 2px solid #d4af37;
     padding-left: 10px;
-    height: 450px;
+    height: 450px; */
   }
   .navbar.show{
     display: block;
@@ -77,38 +79,18 @@
       padding-top: 0px;
     }
 
-    /* about me */
-    /* portfolio */
-    /* .portfolio{
-      padding: 65px 27px;
-    } */
-    /* .portfolio .portfolio-gallery .item{
+
+    .portfolio .portfolio-gallery .item{
       flex: 0 0 50%;
       max-width: 50%;
       position: relative;
       padding: 8px;
-    } */
-    /* .portfolio .portfolio-gallery .ivideo{
-      flex:0 0 33.33%;
-      max-width:33.33%;
-      position: relative;
-      padding: 8px;
     }
-    .portfolio .portfolio-gallery .ivideo .inner{
-      position: relative;
-    }
-    .portfolio .portfolio-gallery .ivideo iframe{
-      width: 100%;
-      height: 220px;
-      display: block;
-    } */
 
-    /* .portfolio .filter-buttons ul li {
+    .portfolio .filter-buttons ul li {
     font-size: 20px;
-    } */
-    /* .portfolio .filter-buttons ul li {
-        font-size: 19px;
-    } */
+    }
+
     /* resume */
     .message-text .text {
       flex: 0 0 100%;

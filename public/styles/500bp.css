@@ -23,17 +23,18 @@
 }
 .home{
   min-height: 100vh;
-  background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG");
+  /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG"); */
   background-size: cover;
   background-position: center;
+  max-width: 100%;
 }
 
 
 /* portfolio */
-/* .portfolio .portfolio-gallery .item{
+.portfolio .portfolio-gallery .item{
   flex: 0 0 100%;
   max-width: 100%;
-} */
+}
 /* .portfolio{
   padding: 80px 20px;
 } */

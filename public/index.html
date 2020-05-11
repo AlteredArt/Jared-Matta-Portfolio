@@ -8,8 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/991bp.css">
-  <link rel="stylesheet" href="styles/767bp.css">
+  <link rel="stylesheet" href="styles/768bp.css">
   <link rel="stylesheet" href="styles/500bp.css">
+  <link rel="stylesheet" href="styles/420bp.css">
+
   <title>Jared Mattas Portfolio</title>
 </head>
 <body>
@@ -45,6 +47,13 @@
       <div class="row full-screen">
         <div class="home-content">
           <div class="block">
+
+            <picture>
+                <source srcset="https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg"
+                        media="(min-width: 800px)">
+                <img src="https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG" />
+            </picture>
+
             <h1>Jared Matta</h1>
             <h6>Full Stack Developer | Graphic Designer</h6>
           </div>
@@ -88,7 +97,7 @@
               <ul id="filter-btns">
                 <li class="active" data-target="all">All</li>
                 <li data-target="project">Projects</li>
-                <li data-target="graphic">Graphic Design</li>
+                <li data-target="graphic">Graphics</li>
                 <li data-target="sketching">Sketches</li>
                 <li data-target="achievments">Achievments</li>
               </ul>
