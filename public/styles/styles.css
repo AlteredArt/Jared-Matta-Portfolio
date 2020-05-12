@@ -176,16 +176,21 @@ header.fixed .social a:hover{
 
 /* home */
 .home{
-  min-height: 100vh;
-  background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg");
-  background-size: cover;
+  background-color: black;
+
+  /* min-height: 100vh; */
+  /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg"); */
+  /* background-size: cover; */
   /* object-fit:  */
-  background-position: right;
+  /* background-position: right; */
   /* padding: 15px; */
   max-width: 100%;
 }
+.home img{
+  padding-top: 60px;
+}
 .home .full-screen{
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .home .home-content{
   flex: 0 0 100%;
@@ -194,13 +199,14 @@ header.fixed .social a:hover{
   flex-wrap: wrap;
 }
 .home .home-content .block{
+  padding-bottom: 50px;
   flex: 0 0 75%;
   max-width: 75%;
   padding-left: 35px;
-  margin-top: 700px;
+  /* margin-top: 5px; */
 }
 .home .home-content .block h1{
-  color: black;
+  color: #ffffff;
   font-size: 78px;
   font-weight: 600;
   margin: 0;
@@ -208,7 +214,7 @@ header.fixed .social a:hover{
   border-bottom: 4px solid #d4af37;
 }
 .home .home-content .block h6{
-  color: black;
+  color: #ffffff;
   font-size: 30px;
   font-weight: 750;
   margin: 0;
@@ -259,7 +265,7 @@ header.fixed .social a:hover{
   font-size: 23px;
   font-weight: 400;
   line-height: 38px;
-  color:#d4af37;
+  color:#ffffff;
   margin: 0px 5px 5px 5px;
 }
 /* aboutme */
@@ -494,6 +500,9 @@ header.fixed .social a:hover{
 }
 /* blogs */
 /* resume */
+.message {
+  background-color: #d4af37
+}
 .message-text{
   background-color: black;
   padding: 45px 69px;

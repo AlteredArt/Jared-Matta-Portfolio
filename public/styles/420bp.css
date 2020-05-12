@@ -14,13 +14,14 @@ header {
     padding: 10px 17px;
 
 }
-.home{
-  min-height: 100vh;
-  background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG");
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-}
+/* .home img{ */
+  /* min-height: 100vh; */
+  /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG"); */
+  /* background-size: cover; */
+  /* background-position: center; */
+
+  /* max-width: 100%; */
+/* } */
 
 
 .navbar{

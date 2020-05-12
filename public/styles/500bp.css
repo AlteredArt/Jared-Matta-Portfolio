@@ -21,13 +21,13 @@
 .home .home-content .block{
   padding-left: 20px;
 }
-.home{
-  min-height: 100vh;
+/* .home picture{ */
+  /* min-height: 100vh; */
   /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG"); */
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-}
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* max-width: 100%; */
+/* } */
 
 
 /* portfolio */

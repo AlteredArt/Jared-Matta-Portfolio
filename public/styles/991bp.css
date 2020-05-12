@@ -11,10 +11,10 @@
     border-bottom: 4px solid #d4af37;
   }
   .home .home-content .block h6{
-    font-size: 19px;
+    font-size: 28px;
   }
   .home .home-content .block{
-    margin-top: 820px;
+    /* margin-top: 820px; */
   }
   header .navbar ul li a {
       font-size: 15px;
@@ -37,12 +37,12 @@
 
 }
 
-  .home{
-    min-height: 100vh;
-    background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg");
-    background-size: cover;
-    background-position: right;
+  /* .home img{ */
+    /* min-height: 100vh; */
+    /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg"); */
+    /* background-size: cover; */
+    /* background-position: right; */
     /* padding-top: 25px; */
-    max-width: 100%
-  }
+    /* max-width: 100% */
+  /* } */
 }
