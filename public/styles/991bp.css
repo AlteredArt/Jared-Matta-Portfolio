@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:300,400,500,600,700,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@media(max-width: 991px){
+  html{
+    scroll-behavior: smooth;
+  }
+/* home */
+  .home .home-content .block h1{
+    font-size: 60px;
+    border-bottom: 4px solid #d4af37;
+  }
+  .home .home-content .block h6{
+    font-size: 28px;
+  }
+  .home .home-content .block{
+    /* margin-top: 820px; */
+  }
+  header .navbar ul li a {
+      font-size: 15px;
+    }
+  header{
+    position: fixed;
+  }
+  .blogs {
+    padding: 75px 15px;
+  }
+
+  .message-text {
+
+    padding: 45px 15px;
+
+}
+.message-text .button a {
+
+    padding: 7px;
+
+}
+
+  /* .home img{ */
+    /* min-height: 100vh; */
+    /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/desktopedit.jpg"); */
+    /* background-size: cover; */
+    /* background-position: right; */
+    /* padding-top: 25px; */
+    /* max-width: 100% */
+  /* } */
+}
