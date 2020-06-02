@@ -600,3 +600,24 @@ footer .social a:hover{
   padding: 15px;
 }
 /* copyright */
+
+
+/* unvisited link */
+.project-tag:link {
+  color: white;
+}
+
+/* visited link */
+.project-tag:visited {
+  color: white;
+}
+
+/* mouse over link */
+.project-tag:hover {
+  color: white;
+}
+
+/* selected link */
+.project-tag:active {
+  color: white;
+}
