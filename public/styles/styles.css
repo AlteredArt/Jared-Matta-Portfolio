@@ -443,6 +443,7 @@ header.fixed .social a:hover{
 .blogs .blogs-content .box{
   flex: 0 0 calc(33.33% - 25px);
   max-width: calc(33.33% - 25px);
+  padding-bottom: 10px;
 }
 .blogs .blogs-content .box .img{
   overflow: hidden;
