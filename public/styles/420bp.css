@@ -3,32 +3,31 @@
 
 
 @media(max-width: 420px){
-
-
-header .brand-name a {
-    font-size: 21px;
-
-}
-
-header {
-    padding: 10px 17px;
-
-}
-/* .home img{ */
-  /* min-height: 100vh; */
-  /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG"); */
-  /* background-size: cover; */
-  /* background-position: center; */
-
-  /* max-width: 100%; */
-/* } */
-
-
+/* Navbar */
 .navbar{
   display: none;
-
 }
 .navbar.show{
   display: block;
 }
+/* Navbar */
+header .brand-name a {
+  font-size: 21px;
+}
+
+header {
+  padding: 10px 17px;
+}
+
+/* Footer */
+.footer{
+  padding-bottom: 45px;
+  font-size: 30px;
+}
+.footer a{
+  color: #d4af37;
+  margin: 25px;
+}
+
+/* Footer */
 }
