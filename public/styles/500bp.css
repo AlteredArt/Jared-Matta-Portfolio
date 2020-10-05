@@ -30,29 +30,6 @@
 /* } */
 
 
-/* portfolio */
-.portfolio .portfolio-gallery .item{
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-/* .portfolio{
-  padding: 80px 20px;
-} */
-
-
-/* .portfolio .portfolio-gallery .ivideo{
-  flex:0 0 100%;
-  max-width:100%;
-
-} */
-/* .portfolio .portfolio-gallery .ivideo .inner{
-  position: relative;
-}
-.portfolio .portfolio-gallery .ivideo iframe{
-  width: 100%;
-  height: 220px;
-  display: block;
-} */
 
 
 
@@ -79,4 +56,12 @@
   padding: 66px 25px;
 }
 /* blogs */
+
+
+/* Portfolio */
+.portfolio .portfolio-gallery .item{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+/* Portfolio */
 }

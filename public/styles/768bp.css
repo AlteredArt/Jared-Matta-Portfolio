@@ -8,15 +8,7 @@
     scroll-behavior: smooth;
   }
   /* master */
-  /* home */
-  /* .home picture{ */
-    /* min-height: 100vh; */
-    /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG"); */
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* padding: 20px 15px; */
-    /* max-width: 100%; */
-  /* } */
+ 
   .home .home-content .block h1{
     font-size: 50px;
     color: #ffffff;
@@ -78,37 +70,8 @@
       padding-left: 0px;
       padding-top: 0px;
     }
-
-
-    .portfolio .portfolio-gallery .item{
-      flex: 0 0 50%;
-      max-width: 50%;
-      position: relative;
-      padding: 8px;
-    }
-
-    .portfolio .filter-buttons ul li {
-    font-size: 20px;
-    }
-
-    /* resume */
-    .message-text .text {
-      flex: 0 0 100%;
-      max-width: 100%;
-      text-align: center;
-      padding-top: 20px;
-      /* font-size: 20px; */
-    }
-    .message-text .text h2 {
-    font-size: 27px;
-    }
-    .message-text .button {
-      flex: 3 0 51%;
-      max-width: 100%;
-      /* align-items: center; */
-    }
-    /* resume */
-    /* blogs */
+    
+/* Blogs */
     .blogs .blogs-content .box {
       flex: 0 0 100%;
       max-width: 100%;
@@ -124,6 +87,17 @@
     .blogs{
       padding: 65px 39px;
     }
+/* Blogs */
 
-
+/* Portfolio */
+.portfolio .portfolio-gallery .item{
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  padding: 8px;
+}
+.portfolio .filter-buttons ul li {
+font-size: 20px;
+}
+/* Portfolio */
 }
