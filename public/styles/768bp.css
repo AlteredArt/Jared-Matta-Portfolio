@@ -7,8 +7,6 @@
   html{
     scroll-behavior: smooth;
   }
-  /* master */
- 
   .home .home-content .block h1{
     font-size: 50px;
     color: #ffffff;
@@ -17,6 +15,7 @@
     font-size: 28px;
     color: #ffffff;
   }
+  /* Master */
   /* header */
   header{
     padding: 10px 40px;
@@ -63,14 +62,13 @@
   .about-me {
       padding: 0px 40px;
   }
-  /* master */
     .about-me .about-content .text{
       flex: 0 0 100%;
       max-width: 100%;
       padding-left: 0px;
       padding-top: 0px;
     }
-    
+/* About Me */
 /* Blogs */
     .blogs .blogs-content .box {
       flex: 0 0 100%;

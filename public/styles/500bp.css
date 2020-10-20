@@ -21,18 +21,7 @@
 .home .home-content .block{
   padding-left: 20px;
 }
-/* .home picture{ */
-  /* min-height: 100vh; */
-  /* background-image: url("https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/mobileedit.JPG"); */
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* max-width: 100%; */
-/* } */
-
-
-
-
-
+/* home */
 /* about me */
 .about-me .about-content .text .info .list p {
   flex: 0 0 100%;
@@ -56,8 +45,6 @@
   padding: 66px 25px;
 }
 /* blogs */
-
-
 /* Portfolio */
 .portfolio .portfolio-gallery .item{
   flex: 0 0 100%;

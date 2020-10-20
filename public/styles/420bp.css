@@ -11,14 +11,14 @@
   display: block;
 }
 /* Navbar */
+/* header */
 header .brand-name a {
   font-size: 21px;
 }
-
 header {
   padding: 10px 17px;
 }
-
+/* header */
 /* Footer */
 .footer{
   padding-bottom: 45px;
@@ -28,6 +28,5 @@ header {
   color: #d4af37;
   margin: 25px;
 }
-
 /* Footer */
 }
