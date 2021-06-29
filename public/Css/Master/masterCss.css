@@ -1,0 +1,916 @@
+
+
+
+
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#GLOBAL
+  ##COLORS
+    *MASTER-COLORS (pc/sc/pc2/sc2/bgc/bgc2/bc)
+    *TEXT-COLORS (c-color(grey-1:8))
+    *BACKGROUND-COLORS (bgc-color(grey-1:8))
+    *BACKGROUND-OPACITY (bgo-0:3)
+    *BACKGROUND-LINER-GRADIENT (bg-linear-grad)
+    *BACKGROUND-RADIAL-GRADIENT (bg-radial-grad)
+    *BORDER-COLOR (bc-color)
+  ##BACKGROUNDS
+    *BACKGROUND-IMAGE (bg-image)
+    *BACKGROUND-IMAGE-2 (bgi-2)
+    *BACKGROUND-TWO-IMAGES-REPEAT (bgi-2-repeat)
+    *BACKGROUND-HERO-IMAGE (bgi-hero)
+    *OBJECT-FIT (of-contain/fill/none)
+    *BACKGROUND-ATTACHMENT (bga-scroll/fixed/local)
+    *BACKGROUND-BLEND (bg-bm-type)
+  ##TAGS
+    *BODY
+    *UL & OL
+    *BUTTONS * INPUT
+    *HR
+  ##FONTS
+    *H1 - H6 & P
+    *LINKS
+    *LINE-HEIGHT (lh-0:4)
+    *FONT-WEIGHT (fw-0:4)
+    *TEXT-TRANSFORM (tt-lowercase/uppercase/capitalize)
+    *TEXT-ALIGN (ta-left/right/center)
+    *TEXT-DECORATION (td-none/underline/line-through/overline/under-over)
+    *FONT-STYLE (italic)
+    *TEXT-SHADOW (ts)
+    *TEXT-BLUR (tb)
+    *TEXT-WRAP (tx-wrap/nowrap-break)
+  ##TAGS
+    *BODY
+    *UL & OL
+    *BUTTONS * INPUT
+    *HR
+  ##VISIBILITY
+    *VISIBILITY (visible/invisible)
+    *OVERFLOW (of-auto/hidden)
+    *OPACITY (o-0,1)
+    *DISPLAY (d-none/inline/inline-block/block/table/table-row/table-cell)
+    *USER SELECT (us-all/auto/none)
+  ##BOXES
+    *BOX-SHADOW (bs-0:3)
+    *BORDER (b-t/r/b/l-0)
+    *BORDER-RADIUS (br-1:5)
+#SIZING
+    *WIDTH (w-25/50/75/100/auto) (mw-100) (maxw) (vw-100) (min-vw-100) (minh)
+    *HEIGHT (h-25/50/75/100/auto) (mh-100) (maxh) (vh-100) (min-vh-100) (minh)
+#SPACING
+  ##MARGIN
+    *AROUND (m-0:5/auto)
+    *TOP (mt-0:5/auto)
+    *RIGHT (mr-0:5/auto)
+    *BOTTOM (mb-0:5/auto)
+    *LEFT (ml-0:5/auto)
+    *HORIZONTAL (mx-0:5/auto)
+    *VERTICAL (my-0:5/auto)
+  ##PADDING
+    *AROUND (p-0:5)
+    *TOP (pt-0:5)
+    *RIGHT (pr-0:5)
+    *BOTTOM (pb-0:5)
+    *LEFT (pl-0:5)
+    *HORIZONTAL (px-0:5)
+    *VERTICAL (py-0:5)
+  #LAYOUT
+    ##LOCATING
+      *FLOATS (float-left/right/none)
+      *POSITION (ps-static) (ps-relative) (ps-absolute) (ps-fixed) (ps-sticky)
+      *BOX-SIZING (boxing)
+      *VERTICAL-ALIGN (al-baseline/top/middle/bottom/text-bottom/text-top)
+      *JUSTIFY-CONTENT (jc-start/end/center/between/around/evenly)
+      *ALIGN-CONTENT (ac-start/end/center/between/around/evenly/stretch)
+      *JUSTIFY-ITEMS (ji-start/end/center/stretch)
+      *ALIGN-ITEMS (ai-start/end/center/baseline/stretch)
+      *JUSTIFY-SELF (js-auto/start/end/center/baseline/stretch)
+      *ALIGN-SELF (as-auto/start/end/center/baseline/stretch)
+      *ORDER (or--1:6)
+    ##FLEX
+      *DISPLAY (d-flex/inline-flex)
+      *FLEX-FILL (ffill)
+      *FLEX-DIRECTION (fd-row/container/row-reverse/column-reverse)
+      *FLEX-WRAP (f-wrap/nowrap/wrap-reverse)
+      *FLEX-FLOW (fflow-row-wrap/column-wrap/row-nowrap/column-nowrap)
+      *FLEX-GROW (fgrow-0:3)
+      *FLEX-SHRINK (fshrink-0:3)
+      *FLEX-BASIS (fb-0/1/100/half/third/fourth/fifth/sixth)
+    ##GRID
+     #GRID TEMPLATE X 2
+      *DISPLAY: GRID
+      *GRID-TEMPLATE: ROWS /COLUMNS
+      *GRID-TEMPLATE-ROWS ***
+      *GRID-TEMPLATE-COLUMNS ***
+      *GRID-AREA (DEFINES ROW-START/ROW-END/COLUMN-START/COLUMN-END) ***
+      *GRID-AUTO-FLOW: EX ***
+      *GRID-AUTO-FLOW: COLUMN (ADDS EXTRA AS COLUMN) ***
+      *GRID-AUTO-COLUMNS: SIZE 
+      *GRID-AUTO-FLOW: ROW (ADDS EXTRA AS ROWS) ***
+      *GRID-AUTO-ROWS: SIZE
+      *GRID-AUTO-FLOW: COLUMN DENSE ***
+      *GRID-AUTO-FLOW: ROW DENSE ***
+      *GRID-TEMPLATE-AREAS
+      *GRID-ORDER
+      *CLASS-EXAMPLE
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS END
+----------------------------------------------------------------
+/*--------------------------------------------------------------
+# GLOBAL
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+  /*--------------------------------------------------------------
+  ##COLORS
+  --------------------------------------------------------------*/
+
+  /* MASTER-COLORS */
+  /* 
+  .pc{color: ;}
+  .sc{color: ;}
+  .pc2{color: ;}
+  .sc2{color: ;} 
+  .bgc{background-color: ;}
+  .bgc2{background-color: ;}
+  .bc{border-color: ;
+  */
+
+  /* TEXT-COLOR */
+  .c-black {color: #000000 !important;}
+  .c-whitesmoke {color: #f8f9fa !important;}
+  .c-body {color: #212529 !important;}
+  .c-grey-1 {color: #cccccc !important;}
+  .c-grey-2 {color: #b3b3b3 !important;}
+  .c-grey-3 {color: #999999 !important;}
+  .c-grey-4 {color: #808080 !important;}
+  .c-grey-5 {color: #666666 !important;}
+  .c-grey-6 {color: #4d4d4d !important;}
+  .c-grey-7 {color: #333333 !important;}
+  .c-grey-8 {color: #191919 !important;}
+  .c-blue {color: #0d6efd !important;}
+  .c-red {color: #dc3545 !important;}
+  .c-green {color: #28a745 !important;}
+  .c-purple {color: #670c74 !important;}
+  .c-yellow {color: #ffc107 !important;}
+  .c-black-50 {color: rgba(0, 0, 0, 0.5) !important;}
+  .c-white-50 {color: rgba(255, 255, 255, 0.5) !important;}
+
+  /* BACKGROUND-COLORS */
+  .bgc-black {background-color: #000000 !important;}
+  .bgc-whitesmoke {background-color: #f8f9fa !important;}
+  .bgc-body {background-color: #212529 !important;}
+  .bgc-grey-1 {background-color: #cccccc !important;}
+  .bgc-grey-2 {background-color: #b3b3b3 !important;}
+  .bgc-grey-3 {background-color: #999999 !important;}
+  .bgc-grey-4 {background-color: #808080 !important;}
+  .bgc-grey-5 {background-color: #666666 !important;}
+  .bgc-grey-6 {background-color: #4d4d4d !important;}
+  .bgc-grey-7 {background-color: #333333 !important;}
+  .bgc-grey-8 {background-color: #191919 !important;}
+  .bgc-blue {background-color: #0d6efd !important;}
+  .bgc-red {background-color: #dc3545 !important;}
+  .bgc-green {background-color: #28a745 !important;}
+  .bgc-purple {background-color: #670c74 !important;}
+  .bgc-yellow {background-color: #ffc107 !important;}
+  .bgc-black-50 {background-color: rgba(0, 0, 0, 0.5) !important;}
+  .bgc-white-50 {background-color: rgba(255, 255, 255, 0.5) !important;}
+  .bgc-transparent {background-color: transparent !important;}
+
+  /* BACKGROUND-OPACITY */
+  .bgo-0 {background: rgb(255, 255, 255) !important;}
+  .bgo-1 {background: rgba(255, 255, 255, 0.1) !important;}
+  .bgo-2 {background: rgba(255, 255, 255, 0.3) !important;}
+  .bgo-3 {background: rgba(255, 255, 255, 0.6) !important;}
+
+  /* BACKGROUND-LINEAR-GRADIENT */
+  .bg-linear-grad {
+    height: 200px !important;
+    background-color: #cccccc !important;
+    background-image: linear-gradient(red, yellow, green) !important;
+  }
+
+  /* BACKGROUND-RADIAL-GRADIENT */
+  .bg-radial-grad {
+    height: 200px !important;
+    background-color: #cccccc !important;
+    background-image: radial-gradient(red, yellow, green) !important;
+  }
+
+  /* BORDER-COLOR */
+  .bc-white {border-color: #fff !important;}
+  .bc-whitesmoke {border-color: #f8f9fa !important;}
+  .bc-black {border-color: #000000 !important;}
+  .bc-body {color: #212529 !important;}
+  .bc-gray {border-color: #6c757d !important;}
+  .bc-red {border-color: #dc3545 !important;}
+  .bc-green {border-color: #28a745 !important;}
+  .bc-blue {border-color: #0d6efd !important;}
+
+  /*--------------------------------------------------------------
+  ##COLORS END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  ##BACKGROUNDS
+  --------------------------------------------------------------*/
+
+  /* BACKGROUND-IMAGE */
+  .bgi {background-image: url("/Assets/1.jpg") !important; background-color: #cccccc !important;}
+  /* BACKGROUND-TWO-IMAGES */
+  .bgi-2 {background-image: url("img_tree.gif"), url("paper.gif") !important; background-color: #cccccc !important;}
+  /* BACKGROUND-TWO-IMAGES-REPEAT */
+  .bgi-2-repeat {background-image: url("img_tree.gif"), url("paper.gif") !important; background-repeat: no-repeat, repeat !important; background-color: #cccccc !important;}
+  /* BACKGROUND-HERO */
+  .bgi-hero {
+    background-image: url("photographer.jpg") !important; /* The image used */
+    background-color: #cccccc !important; /* Used if the image is unavailable */
+    height: 500px !important; /* You must set a specified height */
+    background-position: center !important; /* Center the image */
+    background-repeat: no-repeat !important; /* Do not repeat the image */
+    background-size: cover !important; /* Resize the background image to cover the entire container */
+  }
+
+  /* OBJECT-FIT */
+  .of-contain {width: 200px !important; height: 300px !important; object-fit: contain !important;}
+  .of-fill {width: 200px !important; height: 300px !important; object-fit: fill !important;}
+  .of-none {width: 200px !important; height: 300px !important; object-fit: none !important;}
+
+  /* BACKGROUND-ATTACHMENT (PARALLAX) */
+  .bga-scroll {background-attachment: scroll !important;}
+  .bga-fixed {background-attachment: fixed !important;}
+  .bga-local {background-attachment: local !important;}
+
+  /* BACKGROUND-BLEND */
+  .bg-bm-normal{ background-blend-mode: normal !important;}
+  .bg-bm-multiply{ background-blend-mode: multiply !important;}
+  .bg-bm-screen{ background-blend-mode: screen !important;}
+  .bg-bm-overlay{ background-blend-mode: overlay !important;}
+  .bg-bm-darken{ background-blend-mode: darken !important;}
+  .bg-bm-lighten{ background-blend-mode: lighten !important;}
+  .bg-bm-color-dodge{ background-blend-mode: color-dodge !important;}
+  .bg-bm-color{ background-blend-mode: color !important;}
+  .bg-bm-luminosity{ background-blend-mode: luminosity !important;}
+  .bg-bm-saturation{ background-blend-mode: saturation !important;}
+
+  /*--------------------------------------------------------------
+  ##BACKGROUNDS
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  ##TAGS
+  --------------------------------------------------------------*/
+
+  /* BODY */
+  body {
+    margin: 0 !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: #212529 !important;
+    background-color: #fff !important;
+    -webkit-text-size-adjust: 100% !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  }
+  
+  /* OL & UL */
+  ol, ul {padding-left: 2rem !important;}
+  ol, ul, dl {margin-top: 0; margin-bottom: 1rem !important;}
+  ol ol, ul ul, ol ul, ul ol {margin-bottom: 0 !important;}
+
+  /* BUTTONS & INPUT */
+  button:focus {outline: 1px dotted !important; outline: 5px auto -webkit-focus-ring-color !important;}
+  button, input {overflow: visible !important;}
+  button, select {text-transform: none !important;}
+  input, button, select, optgroup, textarea {
+    margin: 0 !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+
+  /* HR */
+  hr {margin: 1rem 0 !important; color: inherit !important; background-color: currentColor !important; 
+    border: 0 !important; opacity: 0.25 !important;}
+  hr:not([size]) {height: 1px !important;}
+  
+  /*--------------------------------------------------------------
+  ##TAGS END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  ##FONTS
+  --------------------------------------------------------------*/
+
+  .font-size {font-size: calc(1rem + 1vw);}
+
+  /* H1 - H6 & P */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+  }
+
+  /* H1: 2.5REM / 26PX */ h1 {font-size: calc(1.375rem + 1.5vw);}
+  @media (min-width: 1200px) {h1 {font-size: 2.5rem !important;}}
+  /* H2: 2REM / 24PX */ h2 {font-size: calc(1.325rem + 0.9vw);}
+  @media (min-width: 1200px) {h2 {font-size: 2rem !important;}}
+  /* H3: 1.75REM /22PX */ h3 {font-size: calc(1.3rem + 0.6vw);}
+  @media (min-width: 1200px) {h3 {font-size: 1.75rem !important;}}
+  /* H4: 1.5REM / 20PX */ h4 {font-size: calc(1.275rem + 0.3vw);}
+  @media (min-width: 1200px) {h4 {font-size: 1.5rem !important;}}
+  /* H5: 1.25REM / 18PX */ h5 {font-size: 1.25rem !important;}
+  /* H6: 1REM / 16PX */ h6 {font-size: 1rem !important;}
+  /* P: 1REM / 16PX */ p {margin-top: 0 !important; margin-bottom: 1rem !important;}
+
+  /* LINKS */
+  a {color: #4e4e25 !important; text-decoration: underline !important;}
+  a:hover {color: #024dbc !important;} /* hover link*/
+  a:link {color: red !important;}   /* unvisited link */
+  a:visited {color: green !important;}   /* visited link */
+  a:hover {color: hotpink !important;}   /* mouse over link */
+  a:active {color: blue !important;}   /* selected link */
+
+  /* LINE-HEIGHT */
+  .lh-0 {line-height: normal !important;}
+  .lh-1 {line-height: 1 !important;}
+  .lh-2 {line-height: 1.25 !important;}
+  .lh-3 {line-height: 1.5 !important;}
+  .lh-4 {line-height: 2 !important;}
+
+  /* FONT-WEIGHT */
+  .fw-0 {font-weight: 300 !important;}
+  .fw-1 {font-weight: lighter !important;}
+  .fw-2 {font-weight: 400 !important;}
+  .fw-3 {font-weight: 700 !important;}
+  .fw-4 {font-weight: bolder !important;}
+
+  /* TEXT-TRANSFORM */
+  .tt-lowercase {text-transform: lowercase !important;}
+  .tt-uppercase {text-transform: uppercase !important;}
+  .tt-capitalize {text-transform: capitalize !important;}
+
+  /* Text-Align */
+  .ta-left {text-align: left !important;}
+  .ta-right {text-align: right !important;}
+  .ta-center {text-align: center !important;}
+
+  /* TEXT-DECORATION */
+  .td-none {text-decoration: none !important;}
+  .td-underline {text-decoration: underline !important;}
+  .td-line-through {text-decoration: line-through !important;}
+  .td-overline {text-decoration: overline !important;}
+  .td-under-over {text-decoration: underline overline !important;}
+ 
+  /* FONT-STYLE */
+  .italic {font-style: italic !important;}
+
+  /* TEXT-SHADOW */
+  .ts {text-shadow: 2px 2px red !important;}
+
+  /* TEXT-BLUR */
+  .tb {color: transparent !important; text-shadow: 0 0 5px rgba(0,0,0,0.5) !important;}
+
+  /* TEXT-WRAP */
+  .tx-wrap {white-space: normal !important;}
+  .tx-nowrap {white-space: nowrap !important;}
+  .tx-break {word-wrap: break-word !important; word-break: break-word !important;}
+
+  /*--------------------------------------------------------------
+  ##FONTS END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  # VISIBILITY
+  --------------------------------------------------------------*/
+
+  /* VISIBILITY */
+  .visible {visibility: visible !important;}
+  .invisible {visibility: hidden !important;}
+
+  /* OVERFLOW */
+  .of-auto {overflow: auto !important;}
+  .of-hidden {overflow: hidden !important;}
+
+  /* OPACITY */
+  .o-0 {opacity: 0.5 !important;}
+  .o-1 {opacity: 0.2 !important;}
+
+  /* DISPLAY */
+  .d-none {display: none !important;}
+  .d-inline {display: inline !important;}
+  .d-inline-block {display: inline-block !important;}
+  .d-block {display: block !important;}
+  .d-table {display: table !important;}
+  .d-table-row {display: table-row !important;}
+  .d-table-cell {display: table-cell !important;}
+
+  /* USER SELECT */
+  .us-all { -webkit-user-select: all !important; -moz-user-select: all !important;
+    -ms-user-select: all !important; user-select: all !important;}
+  .us-auto { -webkit-user-select: auto !important; -moz-user-select: auto !important;
+    -ms-user-select: auto !important; user-select: auto !important;}
+  .us-none { -webkit-user-select: none !important; -moz-user-select: none !important;
+    -ms-user-select: none !important; user-select: none !important;}
+
+  /*--------------------------------------------------------------
+  # VISIBILITY END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  ## BOXES
+  --------------------------------------------------------------*/
+
+  /* BOX-SHADOW */
+  .bs-0 {box-shadow: none !important;}
+  .bs-1 {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;}
+  .bs-2 {box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;}
+  .bs-3 {box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;}
+
+  /* BORDER */
+  .b {border: 1px solid #dee2e6 !important;}
+  .b-t {border-top: 1px solid #dee2e6 !important;}
+  .b-r {border-right: 1px solid #dee2e6 !important;}
+  .b-b {border-bottom: 1px solid #dee2e6 !important;}
+  .b-l {border-left: 1px solid #dee2e6 !important;}
+  .b-0 {border: 0 !important;}
+  .b-l-0 {border-left: 0 !important;}
+  .b-b-0 {border-bottom: 0 !important;}
+  .b-r-0 {border-right: 0 !important;}
+  .b-t-0 {border-top: 0 !important;}
+
+  /* BORDER-RADIUS */
+  .br-0 {border-radius: 0 !important;}
+  .br-1 {border-radius: 0.25rem !important;}
+  .br-2 {border-radius: 0.2rem !important;}
+  .br-3 {border-radius: 0.3rem !important;}
+  .br-4 {border-radius: 50% !important;}
+  .br-5 {border-radius: 50rem !important;}
+
+  /*--------------------------------------------------------------
+  ## BOXES END
+  --------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# GLOBAL END
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# SIZING
+--------------------------------------------------------------*/
+
+  /* WIDTH */
+  .w-clamp {width: clamp(300px, 50%, 20rem);}
+  .w-25 {width: 25% !important;}
+  .w-50 {width: 50% !important;}
+  .w-75 {width: 75% !important;}
+  .w-100 {width: 100% !important;}
+  .w-auto {width: auto !important;}
+  .mw-100 {max-width: 100% !important;}
+  .maxw {width: max(500px, 70%);}
+  .vw-100 {width: 100vw !important;}
+  .min-vw-100 {min-width: 100vw !important;}
+  .minw {width: min(500px, 70%);}
+
+  /* HEIGHT */
+  .h-clamp {height: clamp(200px, 50%, 20rem);}
+  .h-25 {height: 25% !important;}
+  .h-50 {height: 50% !important;}
+  .h-75 {height: 75% !important;}
+  .h-100 {height: 100% !important;}
+  .h-auto {height: auto !important;}
+  .mh-100 {max-height: 100% !important;}
+  .maxh {height: max(500px, 70%);}
+  .vh-100 {height: 100vh !important;}
+  .min-vh-100 {min-height: 100vh !important;}
+  .minh {height: min(500px, 70%);}
+
+/*--------------------------------------------------------------
+# SIZING END
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# SPACING
+--------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # MARGIN
+  --------------------------------------------------------------*/
+
+  /* MARGIN-AROUND */
+  .m-0 {margin: 0 !important;}
+  .m-1 {margin: 0.25rem !important;}
+  .m-2 {margin: 0.5rem !important;}
+  .m-3 {margin: 1rem !important;}
+  .m-4 {margin: 1.5rem !important;}
+  .m-5 {margin: 3rem !important;}
+  .m-auto {margin: auto !important;}
+
+  /* MARGIN-TOP */
+  .mt-0 {margin-top: 0 !important;}
+  .mt-1 {margin-top: 0.25rem !important;}
+  .mt-2 {margin-top: 0.5rem !important;}
+  .mt-3 {margin-top: 1rem !important;}
+  .mt-4 {margin-top: 1.5rem !important;}
+  .mt-5 {margin-top: 3rem !important;}
+  .mt-auto {margin-top: auto !important;}
+
+  /* MARGIN-RIGHT */
+  .mr-0 {margin-right: 0 !important;}
+  .mr-1 {margin-right: 0.25rem !important;}
+  .mr-2 {margin-right: 0.5rem !important;}
+  .mr-3 {margin-right: 1rem !important;}
+  .mr-4 {margin-right: 1.5rem !important;}
+  .mr-5 {margin-right: 3rem !important;}
+  .mr-auto {margin-right: auto !important;}
+
+  /* MARGIN-BOTTOM */
+  .mb-0 {margin-bottom: 0 !important;}
+  .mb-1 {margin-bottom: 0.25rem !important;}
+  .mb-2 {margin-bottom: 0.5rem !important;}
+  .mb-3 {margin-bottom: 1rem !important;}
+  .mb-4 {margin-bottom: 1.5rem !important;}
+  .mb-5 {margin-bottom: 3rem !important;}
+  .mb-auto {margin-bottom: auto !important;}
+
+  /* MARGIN-LEFT */
+  .ml-0 {margin-left: 0 !important;}
+  .ml-1 {margin-left: 0.25rem !important;}
+  .ml-2 {margin-left: 0.5rem !important;}
+  .ml-3 {margin-left: 1rem !important;}
+  .ml-4 {margin-left: 1.5rem !important;}
+  .ml-5 {margin-left: 3rem !important;}
+  .ml-auto {margin-left: auto !important;}
+
+  /* MARGIN-HORIZONTAL */
+  .mx-0 {margin-right: 0 !important; margin-left: 0 !important;}
+  .mx-1 {margin-right: 0.25rem !important; margin-left: 0.25rem !important;}
+  .mx-2 {margin-right: 0.5rem !important; margin-left: 0.5rem !important;}
+  .mx-3 {margin-right: 1rem !important; margin-left: 1rem !important;}
+  .mx-4 {margin-right: 1.5rem !important; margin-left: 1.5rem !important;}
+  .mx-5 {margin-right: 3rem !important; margin-left: 3rem !important;}
+  .mx-auto {margin-right: auto !important; margin-left: auto !important;}
+
+  /* MARGIN-VERTICAL */
+  .my-0 {margin-top: 0 !important; margin-bottom: 0 !important;}
+  .my-1 {margin-top: 0.25rem !important; margin-bottom: 0.25rem !important;}
+  .my-2 {margin-top: 0.5rem !important; margin-bottom: 0.5rem !important;}
+  .my-3 {margin-top: 1rem !important; margin-bottom: 1rem !important;}
+  .my-4 {margin-top: 1.5rem !important; margin-bottom: 1.5rem !important;}
+  .my-5 {margin-top: 3rem !important; margin-bottom: 3rem !important;}
+  .my-auto {margin-top: auto !important; margin-bottom: auto !important;}
+
+  /*--------------------------------------------------------------
+  # MARGIN END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  # PADDING
+  --------------------------------------------------------------*/
+  /* PADDING-AROUND */
+  .p-0 {padding: 0 !important;}
+  .p-1 {padding: 0.25rem !important;}
+  .p-2 {padding: 0.5rem !important;}
+  .p-3 {padding: 1rem !important;}
+  .p-4 {padding: 1.5rem !important;}
+  .p-5 {padding: 3rem !important;}
+
+  /* PADDING-TOP */
+  .pt-0 {padding-top: 0 !important;}
+  .pt-1 {padding-top: 0.25rem !important;}
+  .pt-2 {padding-top: 0.5rem !important;}
+  .pt-3 {padding-top: 1rem !important;}
+  .pt-4 {padding-top: 1.5rem !important;}
+  .pt-5 {padding-top: 3rem !important;}
+
+  /* PADDING-RIGHT */
+  .pr-0 {padding-right: 0 !important;}
+  .pr-1 {padding-right: 0.25rem !important;}
+  .pr-2 {padding-right: 0.5rem !important;}
+  .pr-3 {padding-right: 1rem !important;}
+  .pr-4 {padding-right: 1.5rem !important;}
+  .pr-5 {padding-right: 3rem !important;}
+
+  /* PADDING-BOTTOM */
+  .pb-0 {padding-bottom: 0 !important;}
+  .pb-1 {padding-bottom: 0.25rem !important;}
+  .pb-2 {padding-bottom: 0.5rem !important;}
+  .pb-3 {padding-bottom: 1rem !important;}
+  .pb-4 {padding-bottom: 1.5rem !important;}
+  .pb-5 {padding-bottom: 3rem !important;}
+
+  /* PADDING-LEFT */
+  .pl-0 {padding-left: 0 !important;}
+  .pl-1 {padding-left: 0.25rem !important;}
+  .pl-2 {padding-left: 0.5rem !important;}
+  .pl-3 {padding-left: 1rem !important;}
+  .pl-4 {padding-left: 1.5rem !important;}
+  .pl-5 {padding-left: 3rem !important;}
+
+  /* PADDING-HORIZONTAL */
+  .px-0 {padding-right: 0 !important; padding-left: 0 !important;}
+  .px-1 {padding-right: 0.25rem !important; padding-left: 0.25rem !important;}
+  .px-2 {padding-right: 0.5rem !important; padding-left: 0.5rem !important;}
+  .px-3 {padding-right: 1rem !important; padding-left: 1rem !important;}
+  .px-4 {padding-right: 1.5rem !important; padding-left: 1.5rem !important;}
+  .px-5 {padding-right: 3rem !important; padding-left: 3rem !important;}
+
+  /* PADDING-VERTICAL */
+  .py-0 {padding-top: 0 !important; padding-bottom: 0 !important;}
+  .py-1 {padding-top: 0.25rem !important; padding-bottom: 0.25rem !important;}
+  .py-2 {padding-top: 0.5rem !important; padding-bottom: 0.5rem !important;}
+  .py-3 {padding-top: 1rem !important; padding-bottom: 1rem !important;}
+  .py-4 {padding-top: 1.5rem !important; padding-bottom: 1.5rem !important;}
+  .py-5 {padding-top: 3rem !important; padding-bottom: 3rem !important;}
+
+  /*--------------------------------------------------------------
+  # PADDING END
+  --------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# SPACING END
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# LAYOUT
+--------------------------------------------------------------*/
+  /* ********************************************************** */
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  # LOCATING
+  --------------------------------------------------------------*/
+
+  /* FLOATS */
+  .fl-left {float: left !important;}
+  .fl-right {float: right !important;}
+  .fl-none {float: none !important;}
+
+  /* POSITION */
+  .ps-static {position: static !important;}
+  /* Setting the t/r/b/l properties of a relatively-positioned 
+  element will cause it to be adjusted away from its normal position. */
+  .ps-relative {position: relative !important;}
+  /* An element with position: absolute; is positioned relative to the nearest positioned 
+  ancestor (instead of positioned relative to the viewport, like fixed). However; if an 
+  absolute positioned element has no positioned ancestors, it uses the document body, 
+  and moves along with page scrolling. */
+  .ps-absolute {
+    position: absolute !important;
+    top: 80px !important;
+    right: 0 !important;
+  }
+
+  .ps-fixed {
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+  }
+
+  .ps-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+  }
+
+  /* BOX-SIZING */
+  .boxing{box-sizing: border-box !important;}
+
+  /* VERTICAL-ALIGN (Maybe not needed)*/
+  .al-baseline {vertical-align: baseline !important;}
+  .al-top {vertical-align: top !important;}
+  .al-middle {vertical-align: middle !important;}
+  .al-bottom {vertical-align: bottom !important;}
+  .al-text-bottom {vertical-align: text-bottom !important;}
+  .al-text-top {vertical-align: text-top !important;}
+
+  /* JUSTIFY-CONTENT */
+  /* On flex direction row Justify is horizontal state. */
+  .jc-start {justify-content: flex-start !important;}
+  .jc-end {justify-content: flex-end !important;}
+  .jc-center {justify-content: center !important;}
+  .jc-between {justify-content: space-between !important;}
+  .jc-around {justify-content: space-around !important;}
+  .jc-evenly {justify-content: space-evenly !important;}
+
+  /* ALIGN-CONTENT   */
+  /* Note: There must be multiple lines of items for this property to have any effect! */
+  /* Only matters if you have more than one row */
+  /* Tip: Use the justify-content property to align the items on the main-axis (horizontally). */
+  .ac-start {align-content: flex-start !important;}
+  .ac-end {align-content: flex-end !important;}
+  .ac-center {align-content: center !important;}
+  .ac-between {align-content: space-between !important;}
+  .ac-around {align-content: space-around !important;}
+  .ac-evenly {align-content: space-evenly !important;}
+  .ac-stretch {align-content: stretch !important;}
+
+  /* JUSTIFY-ITEMS */
+  .ji-start {justify-items: start !important;}
+  .ji-end {justify-items: end !important;}
+  .ji-center {justify-items: center !important;}
+  .ji-stretch {justify-items: stretch !important;}
+
+  /* ALIGN-ITEMS */
+  /* Note: The align-items is the vertical alignment */
+  /* Default value is stretch */
+  /* Tip: Use the align-self property of each item to override the align-items property. */
+  /* If flex-direction is set to reverse swap flex-start & flex-end */
+  .ai-start {align-items: flex-start !important;}  
+  .ai-end {align-items: flex-end !important;}
+  .ai-center {align-items: center !important;}
+  .ai-baseline {align-items: baseline !important;}
+  .ai-stretch {align-items: stretch !important;}
+
+  /* JUSTIFY-SELF (MUST BE ON A SINGLE ITEM)*/
+  .js-auto {justify-self: auto !important;}
+  .js-start {justify-self: flex-start !important;}
+  .js-end {justify-self: flex-end !important;}
+  .js-center {justify-self: center !important;}
+  .js-baseline {justify-self: baseline !important;}
+  .js-stretch {justify-self: stretch !important;}
+
+  /* ALIGN-SELF (NEED TO BE ON A SINGLE OBJECT)*/
+  /* In Flexbox, it aligns the item on the cross axis, USE for stubborn children (NO ALIGN-CONTENT). */
+  /* Tip: The align-self property specifies the alignment for the selected item inside the flexible container. */
+  /* Note: The align-self property overrides the flexible container's align-items property. */
+  .as-auto {align-self: auto !important;}
+  .as-start {align-self: flex-start !important;}
+  .as-end {align-self: flex-end !important;}
+  .as-center {align-self: center !important;}
+  .as-baseline {align-self: baseline !important;}
+  .as-stretch {align-self: stretch !important;}
+
+  /* Order */
+  .or--1 {order: -1 !important;}
+  .or-0 {order: 0 !important;}
+  .or-1 {order: 1 !important;}
+  .or-2 {order: 2 !important;}
+  .or-3 {order: 3 !important;}
+  .or-4 {order: 4 !important;}
+  .or-5 {order: 5 !important;}
+  .or-6 {order: 6 !important;}
+
+  /*--------------------------------------------------------------
+  # LOCATING END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  # FLEX
+  --------------------------------------------------------------*/
+
+  /* DISPLAY */
+  .d-flex {display: flex !important;}
+  .d-inline-flex {display: inline-flex !important;}
+
+  /* FLEX-FILL*/
+  .ffill {flex: 1 1 auto !important;}
+
+  /* FLEX-DIRECTION */
+  /* If flex-direction is set to reverse swap flex-start & flex-end */
+  .fd-row {flex-direction: row !important;}
+  .fd-column {flex-direction: column !important;}
+  .fd-row-reverse {flex-direction: row-reverse !important;}
+  .fd-column-reverse {flex-direction: column-reverse !important;}
+
+  /* FLEX-WRAP */
+  .f-wrap {flex-wrap: wrap !important;}
+  .f-nowrap {flex-wrap: nowrap !important;}
+  .f-wrap-reverse {flex-wrap: wrap-reverse !important;}
+
+  /* FLEX-FLOW */
+  /* Define flex-direction and flex-wrap in one line */
+  .fflow-row-wrap {flex-flow: row wrap !important;}
+  .fflow-column-wrap {flex-flow: column wrap !important;}
+  .fflow-row-nowrap {flex-flow: row nowrap !important;}
+  .fflow-column-nowrap {flex-flow: column nowrap !important;}
+
+  /* FLEX-GROW */
+  .fgrow-0 {flex-grow: 0 !important;}
+  .fgrow-1 {flex-grow: 1 !important;}
+  .fgrow-2 {flex-grow: 2 !important;}
+  .fgrow-3 {flex-grow: 3 !important;}
+
+  /* FLEX-SHRINK */
+  /* DEFAULT IS SET TO 1 / SHRINK 0 DOESNT ALLOW THEM TO SHRINK */
+  .fshrink-0 {flex-shrink: 0 !important;}
+  .fshrink-1 {flex-shrink: 1 !important;}
+  .fshrink-2 {flex-shrink: 2 !important;}
+  .fshrink-3 {flex-shrink: 3 !important;}
+
+  /* FLEX-BASIS */
+  /* ESSENTIALLY THE WIDTH AND HEIGHT PROPERTY FOR FLEX (AUTO IS DEFAULT)*/
+  /* CONTAINER HAS A) SPACE LEFT TO OR B) IS OVERFULL - LOOK AT A) FLEX-GROW AND B) FLEX-SHRINK */
+  /* CALCULATE PORTIONS EACH ITEMS WILL GROW / SHRINK AND THAT TO THE BASE SIZE */
+  /* MARIN AND PADDING WILL AFFECT THE SIZE */
+  /* GROW / SHRINK / FLEX BASIS */
+  .fb-1 {flex-basis: 1 1 25% !important;}
+  .fb-0 {flex-basis: 0px !important;}
+  .fb-100 {flex-basis: 100px !important;}
+  .fb-half {flex-basis: 50% !important;}
+  .fb-third {flex-basis: 33.33333% !important;}
+  .fb-fourth {flex-basis: 25% !important;}
+  .fb-fifth {flex-basis: 20% !important;}
+  .fb-sixth {flex-basis: 16.66666% !important;}
+
+  /*--------------------------------------------------------------
+  # FLEX END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  # GRID
+  --------------------------------------------------------------*/
+
+  /* 
+  @mixin grid($count, $space) {
+    display: grid;
+    grid-template-columns: repeat($count, minmax(0, $space));
+  } */
+
+  /* AUTO-FILL: FILLS THE ROW WITH AS MANY COLUMNS AS IT CAN FIT (repeat(auto-fill, minmax(auto, size)); */
+  /* REPEAT: REPEATS X AMOUNT OF TIME (repeat(Xtimes, size) */
+  /* AUTO-FIT: FITS CURRENTLY AVAILABLE COLUMNS INTO THE SPACE SO THEY EXPAND EVENLY (repeat(auto-fit, minmax(size, fr))*/
+  /* MINMAX: TAKES THE SMALLEST OF TWO NUMBER (minmax( size1, size2)) */
+  /* GRID-AREA (ROW-START / COLUMN-START / ROW-END / COLUMN-END) * */
+  .grid-1 {
+    display: grid;
+    grid-template: 1fr 4fr 3fr 2fr / 1fr 1.2fr 1.5fr;
+    /* gap: 20px !important; */
+    /* grid-template-rows: 1fr 4fr 3fr 2fr; */
+    /* grid-template-columns: 1fr 1.2fr 1.5fr; */
+    /* grid-area: 1 / 1 / 3 / 3; */
+    /* grid: auto-flow: 150px / auto-flow 1fr;} */
+    /* grid-auto-flow: column;} */
+    /* grid-auto-columns: 200px; */
+    /* grid-auto-flow: row;} */
+    /* grid-auto-rows: 200px; */
+    /* grid-auto-flow: column dense;} */
+    /* grid-auto-flow: row dense;} */
+    grid-template-areas:
+      "main main header"
+      "main main candy"
+      "left right candy"
+      "footer footer candy";
+  }
+
+    /* .gt-order div:nth-child(1) {grid-area: X;} */
+    main {grid-area: main;} /* 1 / 1 / 3 / 3*/
+    header {grid-area: header;} /* 1 / 3 / 2 / 4 */
+    .lower {grid-area: footer;}
+    .left {grid-area: left;}
+    .right {grid-area: right;}
+    .candy {grid-area: candy;}
+
+  /* GRID-X */
+  .grid-x {
+    display: grid !important;
+    grid-template: 1fr 4fr 3fr 2fr / 1fr 1.2fr 1.5fr !important;
+    gap: 20px !important;
+    /* grid-template-rows: 1fr 4fr 3fr 2fr; */
+    /* grid-template-columns: 1fr 1.2fr 1.5fr; */
+    /* grid-area: 1 / 1 / 3 / 3; */
+    /* grid: auto-flow 150px / auto-flow 1fr;} */
+    /* grid-auto-flow: column;} */
+    /* grid-auto-flow: row;} */
+    /* grid-auto-flow: column dense;} */
+    /* grid-auto-flow: row dense;} */
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "sidebar main main"
+      "footer footer .";
+  }
+
+    .gt-order div:nth-child(1) {grid-area: X;}
+    .header {grid-area: header;} /* 1 / 1 / 3 / 3*/
+    .sidebar {grid-area: sidebar;} /* 1 / 3 / 2 / 4 */
+    .main {grid-area: main;}
+    .footer {grid-area: footer;}
+
+  /*--------------------------------------------------------------
+  # GRID END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /* ********************************************************** */
+/*--------------------------------------------------------------
+# LAYOUT END
+--------------------------------------------------------------*/
