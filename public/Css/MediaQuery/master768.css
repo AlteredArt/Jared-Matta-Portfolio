@@ -1,0 +1,642 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS: 768 MEDIA QUERY
+----------------------------------------------------------------
+#GLOBAL
+ ##TAGS
+    *BODY
+    *UL & OL
+    *BUTTONS * INPUT
+    *HR
+  ##FONTS
+    *LINE-HEIGHT (lh-0:4)
+    *FONT-WEIGHT (fw-0:4)
+    *TEXT-TRANSFORM (tt-lowercase/uppercase/capitalize)
+    *TEXT-ALIGN (ta-md-left/right/center)
+  ##VISIBILITY
+    *VISIBILITY (visible/invisible)
+    *OPACITY (o-md-0,1)
+    *DISPLAY (d-none/inline/inline-block/block/table/table-row/table-cell)
+#SIZING
+    *WIDTH (w-md-25/50/75/100/auto) (mw-md-100) (max-md-w) (vw-md-100) (min-vw-md-100) (min-md-h)
+    *HEIGHT (h-md-25/50/75/100/auto) (mh-md-100) (max-md-h) (vh-md-100) (min-vh-md-100) (min-md-h)
+#SPACING
+  ##MARGIN
+   *AROUND (m-md-0:5/auto)
+    *TOP (mt-md-0:5/auto)
+    *RIGHT (mr-md-0:5/auto)
+    *BOTTOM (mb-md-0:5/auto)
+    *LEFT (ml-md-0:5/auto)
+    *HORIZONTAL (mx-md-0:5/auto)
+    *VERTICAL (my-md-0:5/auto)
+  ##PADDING
+    *AROUND (p-md-0:5)
+    *TOP (pt-md-0:5)
+    *RIGHT (pr-md-0:5)
+    *BOTTOM (pb-md-0:5)
+    *LEFT (pl-md-0:5)
+    *HORIZONTAL (px-md-0:5)
+    *VERTICAL (py-md-0:5)
+  #LAYOUT
+    ##LOCATING
+      *FLOATS (fl-md-left/right/none)
+      *POSITION (ps-static) (ps-relative) (ps-absolute) (ps-fixed) (ps-sticky)
+      *BOX-SIZING (boxing)
+      *VERTICAL-ALIGN (al-md-baseline/top/middle/bottom/text-bottom/text-top)
+      *JUSTIFY-CONTENT (jc-md-start/end/center/between/around/evenly)
+      *ALIGN-CONTENT (ac-md-start/end/center/between/around/evenly/stretch)
+      *JUSTIFY-ITEMS (ji-md-start/end/center/stretch)
+      *ALIGN-ITEMS (ai-md-start/end/center/baseline/stretch)
+      *JUSTIFY-SELF (js-md-auto/start/end/center/baseline/stretch)
+      *ALIGN-SELF (as-md-auto/start/end/center/baseline/stretch)
+      *ORDER (or-md--1:6)
+    ##FLEX
+      *DISPLAY (d-md-flex/inline-flex)
+      *FLEX-FILL (ffill-md)
+      *FLEX-DIRECTION (fd-md-row/container/row-reverse/column-reverse)
+      *FLEX-WRAP (f-md-wrap/nowrap/wrap-reverse)
+      *FLEX-FLOW (fflow-md-row-wrap/column-wrap/row-nowrap/column-nowrap)
+      *FLEX-GROW (fgrow-md-0:3)
+      *FLEX-SHRINK (fshrink-md-0:3)
+      *FLEX-BASIS (fb-md-0/1/100/half/third/fourth/fifth/sixth)
+    ##GRID
+     #GRID TEMPLATE X 2
+      *DISPLAY: GRID
+      *GRID-TEMPLATE: ROWS /COLUMNS
+      *GRID-TEMPLATE-ROWS ***
+      *GRID-TEMPLATE-COLUMNS ***
+      *GRID-AREA (DEFINES ROW-START/ROW-END/COLUMN-START/COLUMN-END) ***
+      *GRID-AUTO-FLOW: EX ***
+      *GRID-AUTO-FLOW: COLUMN (ADDS EXTRA AS COLUMN) ***
+      *GRID-AUTO-COLUMNS: SIZE 
+      *GRID-AUTO-FLOW: ROW (ADDS EXTRA AS ROWS) ***
+      *GRID-AUTO-ROWS: SIZE
+      *GRID-AUTO-FLOW: COLUMN DENSE ***
+      *GRID-AUTO-FLOW: ROW DENSE ***
+      *GRID-TEMPLATE-AREAS
+      *GRID-ORDER
+      *CLASS-EXAMPLE
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS END
+----------------------------------------------------------------
+/*--------------------------------------------------------------
+# GLOBAL
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+@media (min-width: 768px) {
+  /*--------------------------------------------------------------
+  ##TAGS
+  --------------------------------------------------------------*/
+
+  /* BODY */
+  body {
+    margin: 0 !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: #212529 !important;
+    background-color: #fff !important;
+    -webkit-text-size-adjust: 100% !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  }
+  
+  /* OL & UL */
+  ol, ul {padding-left: 2rem !important;}
+  ol, ul, dl {margin-top: 0; margin-bottom: 1rem !important;}
+  ol ol, ul ul, ol ul, ul ol {margin-bottom: 0 !important;}
+
+  /* BUTTONS & INPUT */
+  button:focus {outline: 1px dotted; outline: 5px auto -webkit-focus-ring-color !important;}
+  button, input {overflow: visible !important;}
+  button, select {text-transform: none !important;}
+  input, button, select, optgroup, textarea {
+    margin: 0 !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+
+  /* HR */
+  hr {margin: 1rem 0 !important; color: inherit !important; background-color: currentColor !important;
+    border: 0 !important; opacity: 0.25 !important;}
+  hr:not([size]) {height: 1px !important;}
+  
+  /*--------------------------------------------------------------
+  ##TAGS END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  ##FONTS
+  --------------------------------------------------------------*/
+
+  /* LINE-HEIGHT */
+  .lh-0 {line-height: normal !important;}
+  .lh-1 {line-height: 1 !important;}
+  .lh-2 {line-height: 1.25 !important;}
+  .lh-3 {line-height: 1.5 !important;}
+  .lh-4 {line-height: 2 !important;}
+
+  /* FONT-WEIGHT */
+  .fw-0 {font-weight: 300 !important;}
+  .fw-1 {font-weight: lighter !important;}
+  .fw-2 {font-weight: 400 !important;}
+  .fw-3 {font-weight: 700 !important;}
+  .fw-4 {font-weight: bolder !important;}
+
+  /* TEXT-ALIGN */
+  .ta-md-left {text-align: left !important;}
+  .ta-md-right {text-align: right !important;}
+  .ta-md-center {text-align: center !important;}
+
+  /*--------------------------------------------------------------
+  ##FONTS END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  # VISIBILITY
+  --------------------------------------------------------------*/
+
+  /* VISIBILITY */
+  .visible {visibility: visible !important;}
+  .invisible {visibility: hidden !important;}
+
+  /* OPACITY */
+  .o-md-0 {opacity: 0.5 !important;}
+  .o-md-1 {opacity: 0.2 !important;}
+
+  /* DISPLAY */
+  .d-md-none {display: none !important;}
+  .d-md-inline {display: inline !important;}
+  .d-md-inline-block {display: inline-block !important;}
+  .d-md-block {display: block !important;}
+  .d-md-table {display: table !important;}
+  .d-md-table-row {display: table-row !important;}
+  .d-md-table-cell {display: table-cell !important;}
+
+  /*--------------------------------------------------------------
+  # VISIBILITY END
+  --------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# GLOBAL END
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# SIZING
+--------------------------------------------------------------*/
+   /* WIDTH */
+   .w-md-clamp {width: clamp(300px, 50%, 20rem);}
+   .w-md-25 {width: 25% !important;}
+   .w-md-50 {width: 50% !important;}
+   .w-md-75 {width: 75% !important;}
+   .w-md-100 {width: 100% !important;}
+   .w-md-auto {width: auto !important;}
+   .mw-md-100 {max-width: 100% !important;}
+   .max-md-w {width: max(500px, 70%);}
+   .vw-md-100 {width: 100vw !important;}
+   .min-vw-md-100 {min-width: 100vw !important;}
+   .min-md-w {width: min(500px, 70%);}
+ 
+   /* HEIGHT */
+   .h-md-clamp {height: clamp(200px, 50%, 20rem);}
+   .h-md-25 {height: 25% !important;}
+   .h-md-50 {height: 50% !important;}
+   .h-md-75 {height: 75% !important;}
+   .h-md-100 {height: 100% !important;}
+   .h-md-auto {height: auto !important;}
+   .mh-md-100 {max-height: 100% !important;}
+   .max-md-h {height: max(500px, 70%);}
+   .vh-md-100 {height: 100vh !important;}
+   .min-vh-md-100 {min-height: 100vh !important;}
+   .min-md-h {height: min(500px, 70%);}
+ 
+/*--------------------------------------------------------------
+# SIZING END
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# SPACING
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+  /*--------------------------------------------------------------
+  # MARGIN
+  --------------------------------------------------------------*/
+  /* MARGIN-AROUND*/
+  .m-md-0 {margin: 0 !important;}
+  .m-md-1 {margin: 0.25rem !important;}
+  .m-md-2 {margin: 0.5rem !important;}
+  .m-md-3 {margin: 1rem !important;}
+  .m-md-4 {margin: 1.5rem !important;}
+  .m-md-5 {margin: 3rem !important;}
+  .m-md-auto {margin: auto !important;}
+
+  /* MARGIN-TOP */
+  .mt-md-0 {margin-top: 0 !important;}
+  .mt-md-1 {margin-top: 0.25rem !important;}
+  .mt-md-2 {margin-top: 0.5rem !important;}
+  .mt-md-3 {margin-top: 1rem !important;}
+  .mt-md-4 {margin-top: 1.5rem !important;}
+  .mt-md-5 {margin-top: 3rem !important;}
+  .mt-md-auto {margin-top: auto !important;}
+
+  /* MARGIN-RIGHT */
+  .mr-md-0 {margin-right: 0 !important;}
+  .mr-md-1 {margin-right: 0.25rem !important;}
+  .mr-md-2 {margin-right: 0.5rem !important;}
+  .mr-md-3 {margin-right: 1rem !important;}
+  .mr-md-4 {margin-right: 1.5rem !important;}
+  .mr-md-5 {margin-right: 3rem !important;}
+  .mr-md-auto {margin-right: auto !important;}
+
+  /* MARGIN-BOTTOM */
+  .mb-md-0 {margin-bottom: 0 !important;}
+  .mb-md-1 {margin-bottom: 0.25rem !important;}
+  .mb-md-2 {margin-bottom: 0.5rem !important;}
+  .mb-md-3 {margin-bottom: 1rem !important;}
+  .mb-md-4 {margin-bottom: 1.5rem !important;}
+  .mb-md-5 {margin-bottom: 3rem !important;}
+  .mb-md-auto {margin-bottom: auto !important;}
+
+  /* MARGIN-LEFT */
+  .ml-md-0 {margin-left: 0 !important;}
+  .ml-md-1 {margin-left: 0.25rem !important;}
+  .ml-md-2 {margin-left: 0.5rem !important;}
+  .ml-md-3 {margin-left: 1rem !important;}
+  .ml-md-4 {margin-left: 1.5rem !important;}
+  .ml-md-5 {margin-left: 3rem !important;}
+  .ml-md-auto {margin-left: auto !important;}
+
+  /* MARGIN-HORIZONTAL */
+  .mx-md-0 {margin-right: 0 !important; margin-left: 0 !important;}
+  .mx-md-1 {margin-right: 0.25rem !important; margin-left: 0.25rem !important;}
+  .mx-md-2 {margin-right: 0.5rem !important; margin-left: 0.5rem !important;}
+  .mx-md-3 {margin-right: 1rem !important; margin-left: 1rem !important;}
+  .mx-md-4 {margin-right: 1.5rem !important; margin-left: 1.5rem !important;}
+  .mx-md-5 {margin-right: 3rem !important; margin-left: 3rem !important;}
+  .mx-md-auto {margin-right: auto !important; margin-left: auto !important;}
+
+  /* MARGIN-VERTICAL */
+  .my-md-0 {margin-top: 0 !important; margin-bottom: 0 !important;}
+  .my-md-1 {margin-top: 0.25rem !important; margin-bottom: 0.25rem !important;}
+  .my-md-2 {margin-top: 0.5rem !important; margin-bottom: 0.5rem !important;}
+  .my-md-3 {margin-top: 1rem !important; margin-bottom: 1rem !important;}
+  .my-md-4 {margin-top: 1.5rem !important; margin-bottom: 1.5rem !important;}
+  .my-md-5 {margin-top: 3rem !important; margin-bottom: 3rem !important;}
+  .my-md-auto {margin-top: auto !important; margin-bottom: auto !important;}
+
+  /*--------------------------------------------------------------
+  # MARGIN END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  # PADDING
+  --------------------------------------------------------------*/
+
+  /* PADDING-AROUND */
+  .p-md-0 {padding: 0 !important;}
+  .p-md-1 {padding: 0.25rem !important;}
+  .p-md-2 {padding: 0.5rem !important;}
+  .p-md-3 {padding: 1rem !important;}
+  .p-md-4 {padding: 1.5rem !important;}
+  .p-md-5 {padding: 3rem !important;}
+
+  /* PADDING-TOP */
+  .pt-md-0 {padding-top: 0 !important;}
+  .pt-md-1 {padding-top: 0.25rem !important;}
+  .pt-md-2 {padding-top: 0.5rem !important;}
+  .pt-md-3 {padding-top: 1rem !important;}
+  .pt-md-4 {padding-top: 1.5rem !important;}
+  .pt-md-5 {padding-top: 3rem !important;}
+
+  /* PADDING-RIGHT */
+  .pr-md-0 {padding-right: 0 !important;}
+  .pr-md-1 {padding-right: 0.25rem !important;}
+  .pr-md-2 {padding-right: 0.5rem !important;}
+  .pr-md-3 {padding-right: 1rem !important;}
+  .pr-md-4 {padding-right: 1.5rem !important;}
+  .pr-md-5 {padding-right: 3rem !important;}
+  
+  /* PADDING-BOTTOM */
+  .pb-md-0 {padding-bottom: 0 !important;}
+  .pb-md-1 {padding-bottom: 0.25rem !important;}
+  .pb-md-2 {padding-bottom: 0.5rem !important;}
+  .pb-md-3 {padding-bottom: 1rem !important;}
+  .pb-md-4 {padding-bottom: 1.5rem !important;}
+  .pb-md-5 {padding-bottom: 3rem !important;}
+
+  /* PADDING-LEFT */
+  .pl-md-0 {padding-left: 0 !important;}
+  .pl-md-1 {padding-left: 0.25rem !important;}
+  .pl-md-2 {padding-left: 0.5rem !important;}
+  .pl-md-3 {padding-left: 1rem !important;}
+  .pl-md-4 {padding-left: 1.5rem !important;}
+  .pl-md-5 {padding-left: 3rem !important;}
+
+  /* PADDING-HORIZONTAL */
+  .px-md-0 {padding-right: 0 !important; padding-left: 0 !important;}
+  .px-md-1 {padding-right: 0.25rem !important; padding-left: 0.25rem !important;}
+  .px-md-2 {padding-right: 0.5rem !important; padding-left: 0.5rem !important;}
+  .px-md-3 {padding-right: 1rem !important; padding-left: 1rem !important;}
+  .px-md-4 {padding-right: 1.5rem !important; padding-left: 1.5rem !important;}
+  .px-md-5 {padding-right: 3rem !important; padding-left: 3rem !important;}
+
+  /* PADDING-VERTICAL */
+  .py-md-0 {padding-top: 0 !important; padding-bottom: 0 !important;}
+  .py-md-1 {padding-top: 0.25rem !important; padding-bottom: 0.25rem !important;}
+  .py-md-2 {padding-top: 0.5rem !important; padding-bottom: 0.5rem !important;}
+  .py-md-3 {padding-top: 1rem !important; padding-bottom: 1rem !important;}
+  .py-md-4 {padding-top: 1.5rem !important; padding-bottom: 1.5rem !important;}
+  .py-md-5 {padding-top: 3rem !important; padding-bottom: 3rem !important;}
+
+  /*--------------------------------------------------------------
+  # PADDING END
+  --------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# SPACING END
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/*--------------------------------------------------------------
+# LAYOUT
+--------------------------------------------------------------*/
+/* ********************************************************** */
+/* ********************************************************** */
+  /*--------------------------------------------------------------
+  # LOCATING
+  --------------------------------------------------------------*
+
+  /* FLOATS */
+  .fl-md-left {float: left !important;}
+  .fl-md-right {float: right !important;}
+  .fl-md-none {float: none !important;}
+
+  /* POSITION */
+  .ps-static {position: static !important;}
+  /* Setting the t/r/b/l properties of a relatively-positioned 
+  element will cause it to be adjusted away from its normal position. */
+  .ps-relative {position: relative !important;}
+  /* An element with position: absolute; is positioned relative to the nearest positioned 
+  ancestor (instead of positioned relative to the viewport, like fixed). However; if an 
+  absolute positioned element has no positioned ancestors, it uses the document body, 
+  and moves along with page scrolling. */
+  .ps-absolute {
+    position: absolute !important;
+    top: 80px;
+    right: 0;
+  }
+
+  .ps-fixed {
+    position: fixed !important;
+    bottom: 0;
+    right: 0;
+  }
+
+  .ps-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+  }
+ 
+  /* BOX-SIZING */
+  .boxing{box-sizing: border-box !important;}
+  
+  /* VERTICAL-ALIGN (Maybe not needed)*/
+  .al-md-baseline {vertical-align: baseline !important;}
+  .al-md-top {vertical-align: top !important;}
+  .al-md-middle {vertical-align: middle !important;}
+  .al-md-bottom {vertical-align: bottom !important;}
+  .al-md-text-bottom {vertical-align: text-bottom !important;}
+  .al-md-text-top {vertical-align: text-top !important;}
+
+  /* JUSTIFY-CONTENT */
+  /* On flex direction row Justify is horizontal state. */
+  .jc-md-start {justify-content: flex-start !important;}
+  .jc-md-end {justify-content: flex-end !important;}
+  .jc-md-center {justify-content: center !important;}
+  .jc-md-between {justify-content: space-between !important;}
+  .jc-md-around {justify-content: space-around !important;}
+  .jc-md-evenly {justify-content: space-evenly !important;}
+
+  /* ALIGN-CONTENT   */
+  /* Note: There must be multiple lines of items for this property to have any effect! */
+  /* Only matters if you have more than one row */
+  /* Tip: Use the justify-content property to align the items on the main-axis (horizontally). */
+  .ac-md-start {align-content: flex-start !important;}
+  .ac-md-end {align-content: flex-end !important;}
+  .ac-md-center {align-content: center !important;}
+  .ac-md-between {align-content: space-between !important;}
+  .ac-md-around {align-content: space-around !important;}
+  .ac-md-evenly {align-content: space-evenly !important;}
+  .ac-md-stretch {align-content: stretch !important;}
+
+  /* JUSTIFY-ITEMS */
+  .ji-md-start {justify-items: start !important;}
+  .ji-md-end {justify-items: end !important;}
+  .ji-md-center {justify-items: center !important;}
+  .ji-md-stretch {justify-items: stretch !important;}
+
+  /* ALIGN-ITEMS */
+  /* Note: The align-items is the vertical alignment */
+  /* Default value is stretch */
+  /* Tip: Use the align-self property of each item to override the align-items property. */
+  /* If flex-direction is set to reverse swap flex-start & flex-end */
+  .ai-md-start {align-items: flex-start !important;}  
+  .ai-md-end {align-items: flex-end !important;}
+  .ai-md-center {align-items: center !important;}
+  .ai-md-baseline {align-items: baseline !important;}
+  .ai-md-stretch {align-items: stretch !important;}-md
+
+  /* JUSTIFY-SELF (MUST BE ON A SINGLE ITEM)*/
+  .js-md-auto {justify-self: auto !important;}
+  .js-md-start {justify-self: flex-start !important;}
+  .js-md-end {justify-self: flex-end !important;}
+  .js-md-center {justify-self: center !important;}
+  .js-md-baseline {justify-self: baseline !important;}
+  .js-md-stretch {justify-self: stretch !important;}
+
+  /* ALIGN-SELF (NEED TO BE ON A SINGLE OBJECT)*/
+  /* In Flexbox, it aligns the item on the cross axis, USE for stubborn children (NO ALIGN-CONTENT). */
+  /* Tip: The align-self property specifies the alignment for the selected item inside the flexible container. */
+  /* Note: The align-self property overrides the flexible container's align-items property. */
+  .as-md-auto {align-self: auto !important;}
+  .as-md-start {align-self: flex-start !important;}
+  .as-md-end {align-self: flex-end !important;}
+  .as-md-center {align-self: center !important;}
+  .as-md-baseline {align-self: baseline !important;}
+  .as-md-stretch {align-self: stretch !important;}
+
+  /* Order */
+  .or-md--1 {order: -1 !important;}
+  .or-md-0 {order: 0 !important;}
+  .or-md-1 {order: 1 !important;}
+  .or-md-2 {order: 2 !important;}
+  .or-md-3 {order: 3 !important;}
+  .or-md-4 {order: 4 !important;}
+  .or-md-5 {order: 5 !important;}
+  .or-md-6 {order: 6 !important;}
+  /*--------------------------------------------------------------
+  # LOCATING END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  # FLEX
+  --------------------------------------------------------------*/
+
+  /* DISPLAY */
+  .d-md-flex {display: flex !important;}
+  .d-md-inline-flex {display: inline-flex !important;}
+
+  /* FLEX-FILL */
+  .ffill-md {flex: 1 1 auto !important;}
+
+  /* FLEX-DIRECTION */
+  .fd-md-row {flex-direction: row !important;}
+  .fd-md-column {flex-direction: column !important;}
+  .fd-md-row-reverse {flex-direction: row-reverse !important;}
+  .fd-md-column-reverse {flex-direction: column-reverse !important;}
+
+  /* FLEX-WRAP */
+  .f-md-wrap {flex-wrap: wrap !important;}
+  .f-md-nowrap {flex-wrap: nowrap !important;}
+  .f-md-wrap-reverse {flex-wrap: wrap-reverse !important;}
+  
+  /* FLEX-FLOW */
+  /* Define flex-direction and flex-wrap in one line */
+  .fflow-md-row-wrap {flex-flow: row wrap !important;}
+  .fflow-md-column-wrap {flex-flow: column wrap !important;}
+  .fflow-md-row-nowrap {flex-flow: row nowrap !important;}
+  .fflow-md-column-nowrap {flex-flow: column nowrap !important;}
+
+  /* FLEX-GROW */
+  .fgrow-md-0 {flex-grow: 0 !important;}
+  .fgrow-md-1 {flex-grow: 1 !important;}
+  .fgrow-md-2 {flex-grow: 2 !important;}
+  .fgrow-md-3 {flex-grow: 3 !important;}
+
+  /* FLEX-SHRINK */
+  /* DEFAULT IS SET TO 1 / SHRINK 0 DOESNT ALLOW THEM TO SHRINK */
+  .fshrink-md-0 {flex-shrink: 0 !important;}
+  .fshrink-md-1 {flex-shrink: 1 !important;}
+  .fshrink-md-2 {flex-shrink: 2 !important;}
+  .fshrink-md-3 {flex-shrink: 3 !important;}
+
+  /* FLEX-BASIS */
+  /* ESSENTIALLY THE WIDTH AND HEIGHT PROPERTY FOR FLEX (AUTO IS DEFAULT)*/
+  /* CONTAINER HAS A) SPACE LEFT TO OR B) IS OVERFULL - LOOK AT A) FLEX-GROW AND B) FLEX-SHRINK */
+  /* CALCULATE PORTIONS EACH ITEMS WILL GROW / SHRINK AND THAT TO THE BASE SIZE */
+  /* MARIN AND PADDING WILL AFFECT THE SIZE */
+  /* GROW / SHRINK / FLEX BASIS */
+  .fb-md-1 {flex-basis: 1 1 25% !important;}
+  .fb-md-0 {flex-basis: 0px !important;}
+  .fb-md-100 {flex-basis: 100px !important;}
+  .fb-md-half {flex-basis: 50% !important;}
+  .fb-md-third {flex-basis: 33.33333% !important;}
+  .fb-md-fourth {flex-basis: 25% !important;}
+  .fb-md-fifth {flex-basis: 20% !important;}
+  .fb-md-sixth {flex-basis: 16.66666% !important;}
+  
+  /*--------------------------------------------------------------
+  # FLEX END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /*--------------------------------------------------------------
+  # GRID
+  --------------------------------------------------------------*/
+
+   /* 
+  @mixin grid($count, $space) {
+    display: grid;
+    grid-template-columns: repeat($count, minmax(0, $space));
+  } */
+
+  /* AUTO-FILL: FILLS THE ROW WITH AS MANY COLUMNS AS IT CAN FIT (repeat(auto-fill, minmax(auto, size)); */
+  /* REPEAT: REPEATS X AMOUNT OF TIME (repeat(Xtimes, size) */
+  /* AUTO-FIT: FITS CURRENTLY AVAILABLE COLUMNS INTO THE SPACE SO THEY EXPAND EVENLY (repeat(auto-fit, minmax(size, fr))*/
+  /* MINMAX: TAKES THE SMALLEST OF TWO NUMBER (minmax( size1, size2)) */
+  /* GRID-AREA (ROW-START / COLUMN-START / ROW-END / COLUMN-END) * */
+  .grid-md-1 {
+    display: grid !important;
+    grid-template: 1fr 4fr 3fr 2fr / 1fr 1.2fr 1.5fr !important;
+    gap: 20px !important;
+    /* grid-template-rows: 1fr 4fr 3fr 2fr; */
+    /* grid-template-columns: 1fr 1.2fr 1.5fr; */
+    /* grid-area: 1 / 1 / 3 / 3; */
+    /* grid: auto-flow: 150px / auto-flow 1fr;} */
+    /* grid-auto-flow: column;} */
+    /* grid-auto-columns: 200px; */
+    /* grid-auto-flow: row;} */
+    /* grid-auto-rows: 200px; */
+    /* grid-auto-flow: column dense;} */
+    /* grid-auto-flow: row dense;} */
+    grid-template-areas:
+      "main main header"
+      "main main candy"
+      "left right candy"
+      "footer footer candy";
+  }
+
+    .gt-order div:nth-child(1) {grid-area: X;}
+    main {grid-area: main;} /* 1 / 1 / 3 / 3*/
+    header {grid-area: header;} /* 1 / 3 / 2 / 4 */
+    .lower {grid-area: footer;}
+    .left {grid-area: left;}
+    .right {grid-area: right;}
+    .candy {grid-area: candy;}
+
+  /* GRID-X */
+  .grid-x {
+    display: grid !important;
+    grid-template: 1fr 4fr 3fr 2fr / 1fr 1.2fr 1.5fr !important;
+    gap: 20px !important;
+    /* grid-template-rows: 1fr 4fr 3fr 2fr; */
+    /* grid-template-columns: 1fr 1.2fr 1.5fr; */
+    /* grid-area: 1 / 1 / 3 / 3; */
+    /* grid: auto-flow 150px / auto-flow 1fr;} */
+    /* grid-auto-flow: column;} */
+    /* grid-auto-flow: row;} */
+    /* grid-auto-flow: column dense;} */
+    /* grid-auto-flow: row dense;} */
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "sidebar main main"
+      "footer footer .";
+  }
+
+    .gt-order div:nth-child(1) {grid-area: X;}
+    .header {grid-area: header;} /* 1 / 1 / 3 / 3*/
+    .sidebar {grid-area: sidebar;} /* 1 / 3 / 2 / 4 */
+    .main {grid-area: main;}
+    .footer {grid-area: footer;}
+
+  /*--------------------------------------------------------------
+  # GRID END
+  --------------------------------------------------------------*/
+  /* ********************************************************** */
+  /* ********************************************************** */
+  
+/*--------------------------------------------------------------
+# LAYOUT END
+--------------------------------------------------------------*/
+}
+
+
+
